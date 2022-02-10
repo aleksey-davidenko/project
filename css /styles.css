@@ -409,19 +409,19 @@ button {
 }
 
 .header__down-dropdowns-item-list-item_name_tintoretto {
-    background-image: url('/img/header/Rectangle\ 57.jpg');
+    background-image: url('https://aleksey-davidenko.github.io/project/img/header/Rectangle\ 57.jpg');
 }
 
 .header__down-dropdowns-item-list-item_name_friedrich {
-    background-image: url('/img/header/Rectangle\ 58.jpg');
+    background-image: url('https://aleksey-davidenko.github.io/project/img/header/Rectangle\ 58.jpg');
 }
 
 .header__down-dropdowns-item-list-item_name_leonardo {
-    background-image: url('/img/header/Rectangle\ 59.jpg');
+    background-image: url('https://aleksey-davidenko.github.io/project/img/header/Rectangle\ 59.jpg');
 }
 
 .header__down-dropdowns-item-list-item_name_verrocchio {
-    background-image: url('/img/header/Rectangle\ 60.jpg');
+    background-image: url('https://aleksey-davidenko.github.io/project/img/header/Rectangle\ 60.jpg');
 }
 
 .header__down-dropdowns-item-list-item-link {
@@ -493,7 +493,7 @@ button {
     cursor: pointer;
     margin-right: 9px;
     background: transparent;
-    background-image: url('/img/header/Search.png');
+    background-image: url('https://aleksey-davidenko.github.io/project/img/header/Search.png');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
@@ -526,15 +526,15 @@ button {
 }
 
 .header__down-desktop-search-form:hover .header__down-desktop-search__form_btn-submit {
-    background-image: url('/img/header/header__down-desktop-search-submit-icon-hover-active.png');
+    background-image: url('https://aleksey-davidenko.github.io/project/img/header/header__down-desktop-search-submit-icon-hover-active.png');
 }
 
 .header__down-desktop-search-form:focus .header__down-desktop-search__form_btn-submit {
-    background-image: url('/img/header/header__down-desktop-search-submit-icon-hover-active.png');
+    background-image: url('https://aleksey-davidenko.github.io/project/img/header/header__down-desktop-search-submit-icon-hover-active.png');
 }
 
 .header__down-desktop-search-form:active .header__down-desktop-search__form_btn-submit {
-    background-image: url('/img/header/header__down-desktop-search-submit-icon-hover-active.png');
+    background-image: url('https://aleksey-davidenko.github.io/project/img/header/header__down-desktop-search-submit-icon-hover-active.png');
 }
 
 .header__down-desktop-search__form-field::placeholder {
@@ -570,15 +570,15 @@ button {
 }
 
 .slider__item-1 {
-    background-image: url('/img/hero/slayder1.png');
+    background-image: url('https://aleksey-davidenko.github.io/project/img/hero/slayder1.png');
 }
 
 .slider__item-2 {
-    background-image: url('/img/hero/slayder2.png');
+    background-image: url('https://aleksey-davidenko.github.io/project/img/hero/slayder2.png');
 }
 
 .slider__item-3 {
-    background-image: url('/img/hero/slayder3.png');
+    background-image: url('https://aleksey-davidenko.github.io/project/img/hero/slayder3.png');
 }
 
 .slider__info-container {
@@ -687,7 +687,7 @@ button {
 
 /* Gallery */
 .gallery {
-    background-image: url('/img/gallery/gallery.png');
+    background-image: url('https://aleksey-davidenko.github.io/project/img/gallery/gallery.png');
     background-size: cover;
     background-position: center;
 }
@@ -783,7 +783,7 @@ button {
     width: 11px;
     height: 6px;
     border: none;
-    background-image: url('/img/gallery/Rectangle\ 54.png');
+    background-image: url('https://aleksey-davidenko.github.io/project/img/gallery/Rectangle\ 54.png');
     background-repeat: no-repeat;
     transition: transform .3s ease;
 }
@@ -1044,7 +1044,7 @@ button {
     right: 25px;
     left: 25px;
     background-color: rgba(0,0,0,0.5); 
-    background-image: url('/img/gallery/Group\ 12.png');
+    background-image: url('https://aleksey-davidenko.github.io/project/img/gallery/Group\ 12.png');
     background-size: 25%;
     background-position: center;
     background-repeat: no-repeat;
@@ -1810,7 +1810,7 @@ button {
 
 /* Publications */
 .publications {
-    background-image: url('/img/publications/publications.jpg');
+    background-image: url('https://aleksey-davidenko.github.io/project/img/publications/publications.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -3209,7 +3209,7 @@ button {
         height: 31px;
         cursor: pointer;
         background: transparent;
-        background-image: url('/img/header/Group\ 64.png');
+        background-image: url('https://aleksey-davidenko.github.io/project/img/header/Group\ 64.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: contain;
@@ -3219,15 +3219,15 @@ button {
     }
 
     .header__up-mobile-search-button:hover:not(:focus-visible) {
-        background-image: url('/img/header/header__down-desktop-search-submit-icon-hover-active.png');
+        background-image: url('https://aleksey-davidenko.github.io/project/img/header/header__down-desktop-search-submit-icon-hover-active.png');
     }
 
     .header__up-mobile-search-button:hover:not(:focus-visible) {
-        background-image: url('/img/header/header__down-desktop-search-submit-icon-hover-active.png');
+        background-image: url('https://aleksey-davidenko.github.io/project/img/header/header__down-desktop-search-submit-icon-hover-active.png');
     }
 
     .header__up-mobile-search-button:hover:not(:focus-visible) {
-        background-image: url('/img/header/header__down-desktop-search-submit-icon-hover-active.pn');
+        background-image: url('https://aleksey-davidenko.github.io/project/img/header/header__down-desktop-search-submit-icon-hover-active.pn');
     }
 
     .header__up-mobile-search {
@@ -3275,7 +3275,7 @@ button {
         width: 29px;
         height: 29px;
         background: transparent;
-        background-image: url('/img/header/Group\ 64.png');
+        background-image: url('https://aleksey-davidenko.github.io/project/img/header/Group\ 64.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: contain;
@@ -3285,15 +3285,15 @@ button {
     }
     
     .header__up-mobile-search-form:hover .header__up-mobile-search-form-btn-submit {
-        background-image: url('/img/header/header__down-desktop-search-submit-icon-hover-active.png');
+        background-image: url('https://aleksey-davidenko.github.io/project/img/header/header__down-desktop-search-submit-icon-hover-active.png');
     }
     
     .header__up-mobile-search-form:focus .header__up-mobile-search-form-btn-submit {
-        background-image: url('/img/header/header__down-desktop-search-submit-icon-hover-active.png');
+        background-image: url('https://aleksey-davidenko.github.io/project/img/header/header__down-desktop-search-submit-icon-hover-active.png');
     }
 
     .header__up-mobile-search-form:active .header__up-mobile-search-form-btn-submit {
-        background-image: url('/img/header/header__down-desktop-search-submit-icon-hover-active.png');
+        background-image: url('https://aleksey-davidenko.github.io/project/img/header/header__down-desktop-search-submit-icon-hover-active.png');
     }
 
     .header__up-mobile-search-close-button {
@@ -3308,15 +3308,15 @@ button {
 
     /* Slider */
     .slider__item-1 {
-        background-image: url('/img/hero/hero1024/slayder.1.1024.png');
+        background-image: url('https://aleksey-davidenko.github.io/project/img/hero/hero1024/slayder.1.1024.png');
     }
     
     .slider__item-2 {
-        background-image: url('/img/hero/hero1024/slayder.2.1024.png');
+        background-image: url('https://aleksey-davidenko.github.io/project/img/hero/hero1024/slayder.2.1024.png');
     }
     
     .slider__item-3 {
-        background-image: url('/img/hero/hero1024/slayder1024.png');
+        background-image: url('https://aleksey-davidenko.github.io/project/img/hero/hero1024/slayder1024.png');
     }
 
     .slider__info-container {
@@ -3336,7 +3336,7 @@ button {
 
     /* Gallery */
     .gallery {
-        background-image: url('/img/gallery/gallery1024/gallery.1024.png');
+        background-image: url('https://aleksey-davidenko.github.io/project/img/gallery/gallery1024/gallery.1024.png');
     }
 
     .choices {
@@ -3398,7 +3398,7 @@ button {
 
     /* Publications */
     .publications {
-        background-image: url('/img/publications/publications1024/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 4\(1\).jpg');
+        background-image: url('https://aleksey-davidenko.github.io/project/img/publications/publications1024/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 4\(1\).jpg');
     }
 
     .publications__container {
@@ -3539,7 +3539,7 @@ button {
         height: 31px;
         margin-left: 23px;
         background-color: transparent;
-        background-image: url('/img/header/mob_search-icon-close.png');
+        background-image: url('https://aleksey-davidenko.github.io/project/img/header/mob_search-icon-close.png');
         background-repeat: no-repeat;
         background-size: contain;
         transition: border-color .3s ease;
@@ -3548,37 +3548,37 @@ button {
     }
 
     .header__up-mobile-search-close-button:hover {
-        background-image: url('/img/header/mob_search-icon-close-hover-active.png');
+        background-image: url('https://aleksey-davidenko.github.io/project/img/header/mob_search-icon-close-hover-active.png');
     }
 
     .header__up-mobile-search-close-button:focus {
-        background-image: url('/img/header/mob_search-icon-close-focus.png');
+        background-image: url('https://aleksey-davidenko.github.io/project/img/header/mob_search-icon-close-focus.png');
     }
 
     .header__up-mobile-search-close-button:active {
-        background-image: url('/img/header/mob_search-icon-close-hover-active.png');
+        background-image: url('https://aleksey-davidenko.github.io/project/img/header/mob_search-icon-close-hover-active.png');
     }
 
 
 
     /* Slider */
     .slider__item-1 {
-        background-image: url('/img/hero/hero768/768.png');
+        background-image: url('https://aleksey-davidenko.github.io/project/img/hero/hero768/768.png');
     }
     
     .slider__item-2 {
-        background-image: url('/img/hero/hero768/7681.png');
+        background-image: url('https://aleksey-davidenko.github.io/project/img/hero/hero768/7681.png');
     }
     
     .slider__item-3 {
-        background-image: url('/img/hero/hero768/7682.png');
+        background-image: url('https://aleksey-davidenko.github.io/project/img/hero/hero768/7682.png');
     }
 
 
 
     /* Gallery */        
     .gallery {
-        background-image: url('/img/gallery/gallery768/gallery768.png');
+        background-image: url('https://aleksey-davidenko.github.io/project/img/gallery/gallery768/gallery768.png');
     }
     
     .choices__list--dropdown {
@@ -3685,7 +3685,7 @@ button {
 
     /* Publications */
     .publications {
-        background-image: url('/img/publications/publications768/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 4.png');
+        background-image: url('https://aleksey-davidenko.github.io/project/img/publications/publications768/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 4.png');
     }
 
     .publications__container {
@@ -4000,15 +4000,15 @@ button {
 
     /* Slider */
     .slider__item-1 {
-        background-image: url('/img/hero/hero320/min.1.png');
+        background-image: url('https://aleksey-davidenko.github.io/project/img/hero/hero320/min.1.png');
     }
     
     .slider__item-2 {
-        background-image: url('/img/hero/hero320/min.2.png');
+        background-image: url('https://aleksey-davidenko.github.io/project/img/hero/hero320/min.2.png');
     }
     
     .slider__item-3 {
-        background-image: url('/img/hero/hero320/min.3.png');
+        background-image: url('https://aleksey-davidenko.github.io/project/img/hero/hero320/min.3.png');
     }
 
     .slider__info-container {
@@ -4068,7 +4068,7 @@ button {
 
     /* Gallery */
     .gallery {
-        background-image: url('/img/gallery/gallery320/320.img.png');
+        background-image: url('https://aleksey-davidenko.github.io/project/img/gallery/gallery320/320.img.png');
     }
 
     .gallery__container {
@@ -4259,7 +4259,7 @@ button {
 
     /* Publications */
     .publications {
-        background-image: url('/img/publications/publications320/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 4\(1\).png');
+        background-image: url('https://aleksey-davidenko.github.io/project/img/publications/publications320/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 4\(1\).png');
     }
 
    .publications__container {
@@ -4312,7 +4312,7 @@ button {
         display: none;
         width: 12px;
         height: 12px;
-        background-image: url('/img/publications/Group\ 4.svg');
+        background-image: url('https://aleksey-davidenko.github.io/project/img/publications/Group\ 4.svg');
     }
 
     .publications__filter-original-checkbox:checked + .publications__filter-checkbox-title::after {
