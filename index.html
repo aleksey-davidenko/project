@@ -1,0 +1,2082 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blanchard — художественная галерея</title>
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css">
+  <link rel="stylesheet" href="/css/choices.min.css">
+  <link rel="stylesheet" href="/css/justValidateTooltip.min.css">
+  <link rel="stylesheet" href="/css/jquery-ui.min.css">
+  <link rel="stylesheet" href="/css/fonts.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="shortcut icon" href="/img/header/Blanchard.png" type="image/x-icon">
+</head>
+<body>
+  <div class="preloader">
+    <img class="preloader__img" src="/img/header/Лого.png" alt="Сайт загружается">
+  </div>
+  <header class="header">
+    <div class="header__up">
+      <div class="container-fluid header__up-container">
+        <div class="header__up-container-left">
+          <a class="header__logo" href="/">
+            <img class="header__logo-img" src="/img/header/Лого(2).png" alt="Логотип Blanchard">
+          </a>        
+          <button class="header__burger-menu-button" id="burger-menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <div class="header__up-container-center">
+          <a class="header__mob-logo" href="/">
+            <picture>
+              <source srcset="/img/header/Лого(1).png" media="(max-width:767px)">
+              <img class="header__logo-img" src="/img/header/Лого(3).png" alt="Мобильный логотип Blanchard">
+            </picture>
+          </a>
+        </div>
+        <div class="header__up-container-right">
+          <div class="header__up-nav-log">
+            <nav class="header__up-nav">
+              <ul class="header__up-nav-list">
+                <li class="header__up-nav-item">
+                  <a class="header__up-nav-link" href="#about">О нас</a>
+                </li>
+                <li class="header__up-nav-item">
+                  <a class="header__up-nav-link" href="#gallery">Галерея</a>
+                </li>
+                <li class="header__up-nav-item">
+                  <a class="header__up-nav-link" href="#catalog">Каталог</a>
+                </li>
+                <li class="header__up-nav-item">
+                  <a class="header__up-nav-link" href="#events">События</a>
+                </li>
+                <li class="header__up-nav-item">
+                  <a class="header__up-nav-link" href="#publications">Издания</a>
+                </li>              
+                <li class="header__up-nav-item">
+                  <a class="header__up-nav-link" href="#projects">Проекты</a>
+                </li>
+                <li class="header__up-nav-item">
+                  <a class="header__up-nav-link" href="#contacts">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__up-login">
+              <a href="#" class="header__up-login-link" aria-label="Войти на сайт">
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" fill="white"/></svg>
+                Войти
+              </a>
+            </div>
+          </div>
+          <button class="header__up-mobile-search-button" aria-label="Открыть форму поиска"></button>
+          <div class="header__up-mobile-search">
+            <form class="header__up-mobile-search-form" action="https://jsonplaceholder.typicode.com/posts" method="POST" autocomplete="on">
+                <button class="header__up-mobile-search-form-btn-submit" type="submit" aria-label="начать поиск"></button>
+                <input class="header__up-mobile-search-form-field" type="text" name="query" required>
+                <button class="header__up-mobile-search-close-button" type="button" aria-label="закрыть форму поиска"></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__down">
+      <div class="container-fluid header__down-container">
+        <div class="header__down-container-left">
+          <ul class="header__down-dropdowns">
+            <li class="header__down-dropdowns-item">
+              <button class="header__down-dropdowns-item-btn">
+                Реализм
+                <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 1L6 6L1 1" stroke="white"/></svg>
+              </button>
+              <div class="header__down-dropdowns-item-list-container">
+                <ul class="header__down-dropdowns-item-list">
+                  <li class="header__down-dropdowns-item-list-item header__down-dropdowns-item-list-item_name_tintoretto">
+                    <a href="#" class="header__down-dropdowns-item-list-item-link">Тинторетто</a>
+                  </li>
+                  <li class="header__down-dropdowns-item-list-item header__down-dropdowns-item-list-item_name_friedrich">
+                    <a href="#" class="header__down-dropdowns-item-list-item-link">Фридрих</a>
+                  </li>
+                  <li class="header__down-dropdowns-item-list-item header__down-dropdowns-item-list-item_name_leonardo">
+                    <a href="#" class="header__down-dropdowns-item-list-item-link">Леонардо</a>
+                  </li>
+                  <li class="header__down-dropdowns-item-list-item header__down-dropdowns-item-list-item_name_verrocchio">
+                    <a href="#" class="header__down-dropdowns-item-list-item-link">Верроккьо</a>
+                  </li>
+                  <li class="header__down-dropdowns-item-list-item header__down-dropdowns-item-list-item_name_tintoretto">
+                    <a href="#" class="header__down-dropdowns-item-list-item-link">Тинторетто</a>
+                  </li>
+                  <li class="header__down-dropdowns-item-list-item header__down-dropdowns-item-list-item_name_friedrich">
+                    <a href="#" class="header__down-dropdowns-item-list-item-link">Фридрих</a>
+                  </li>
+                  <li class="header__down-dropdowns-item-list-item header__down-dropdowns-item-list-item_name_leonardo">
+                    <a href="#" class="header__down-dropdowns-item-list-item-link">Леонардо</a>
+                  </li>
+                  <li class="header__down-dropdowns-item-list-item header__down-dropdowns-item-list-item_name_verrocchio">
+                    <a href="#" class="header__down-dropdowns-item-list-item-link">Верроккьо</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="header__down-dropdowns-item">
+              <button class="header__down-dropdowns-item-btn">
+                Импрессионизм
+                <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 1L6 6L1 1" stroke="white"/></svg>
+              </button>
+              <div class="header__down-dropdowns-item-list-container">
+                <ul class="header__down-dropdowns-item-list">
+                  <li class="header__down-dropdowns-item-list-item header__down-dropdowns-item-list-item_name_tintoretto">
+                    <a href="#" class="header__down-dropdowns-item-list-item-link">Тинторетто</a>
+                  </li>
+                  <li class="header__down-dropdowns-item-list-item header__down-dropdowns-item-list-item_name_friedrich">
+                    <a href="#" class="header__down-dropdowns-item-list-item-link">Фридрих</a>
+                  </li>
+                  <li class="header__down-dropdowns-item-list-item header__down-dropdowns-item-list-item_name_leonardo">
+                    <a href="#" class="header__down-dropdowns-item-list-item-link">Леонардо</a>
+                  </li>
+                  <li class="header__down-dropdowns-item-list-item header__down-dropdowns-item-list-item_name_verrocchio">
+                    <a href="#" class="header__down-dropdowns-item-list-item-link">Верроккьо</a>
+                  </li>
+                  <li class="header__down-dropdowns-item-list-item header__down-dropdowns-item-list-item_name_tintoretto">
+                    <a href="#" class="header__down-dropdowns-item-list-item-link">Тинторетто</a>
+                  </li>
+                  <li class="header__down-dropdowns-item-list-item header__down-dropdowns-item-list-item_name_friedrich">
+                    <a href="#" class="header__down-dropdowns-item-list-item-link">Фридрих</a>
+                  </li>
+                  <li class="header__down-dropdowns-item-list-item header__down-dropdowns-item-list-item_name_leonardo">
+                    <a href="#" class="header__down-dropdowns-item-list-item-link">Леонардо</a>
+                  </li>
+                  <li class="header__down-dropdowns-item-list-item header__down-dropdowns-item-list-item_name_verrocchio">
+                    <a href="#" class="header__down-dropdowns-item-list-item-link">Верроккьо</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="header__down-dropdowns-item">
+              <button class="header__down-dropdowns-item-btn">
+                Постимпрессионизм
+                <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 1L6 6L1 1" stroke="white"/></svg>
+              </button>
+              <div class="header__down-dropdowns-item-list-container">
+                <ul class="header__down-dropdowns-item-list">
+                  <li class="header__down-dropdowns-item-list-item header__down-dropdowns-item-list-item_name_tintoretto">
+                    <a href="#" class="header__down-dropdowns-item-list-item-link">Тинторетто</a>
+                  </li>
+                  <li class="header__down-dropdowns-item-list-item header__down-dropdowns-item-list-item_name_friedrich">
+                    <a href="#" class="header__down-dropdowns-item-list-item-link">Фридрих</a>
+                  </li>
+                  <li class="header__down-dropdowns-item-list-item header__down-dropdowns-item-list-item_name_leonardo">
+                    <a href="#" class="header__down-dropdowns-item-list-item-link">Леонардо</a>
+                  </li>
+                  <li class="header__down-dropdowns-item-list-item header__down-dropdowns-item-list-item_name_verrocchio">
+                    <a href="#" class="header__down-dropdowns-item-list-item-link">Верроккьо</a>
+                  </li>
+                  <li class="header__down-dropdowns-item-list-item header__down-dropdowns-item-list-item_name_tintoretto">
+                    <a href="#" class="header__down-dropdowns-item-list-item-link">Тинторетто</a>
+                  </li>
+                  <li class="header__down-dropdowns-item-list-item header__down-dropdowns-item-list-item_name_friedrich">
+                    <a href="#" class="header__down-dropdowns-item-list-item-link">Фридрих</a>
+                  </li>
+                  <li class="header__down-dropdowns-item-list-item header__down-dropdowns-item-list-item_name_leonardo">
+                    <a href="#" class="header__down-dropdowns-item-list-item-link">Леонардо</a>
+                  </li>
+                  <li class="header__down-dropdowns-item-list-item header__down-dropdowns-item-list-item_name_verrocchio">
+                    <a href="#" class="header__down-dropdowns-item-list-item-link">Верроккьо</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="header__down-dropdowns-item">
+              <button class="header__down-dropdowns-item-btn">
+                Авангард
+                <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 1L6 6L1 1" stroke="white"/></svg>
+              </button>
+              <div class="header__down-dropdowns-item-list-container">
+                <ul class="header__down-dropdowns-item-list">
+                  <li class="header__down-dropdowns-item-list-item header__down-dropdowns-item-list-item_name_tintoretto">
+                    <a href="#" class="header__down-dropdowns-item-list-item-link">Тинторетто</a>
+                  </li>
+                  <li class="header__down-dropdowns-item-list-item header__down-dropdowns-item-list-item_name_friedrich">
+                    <a href="#" class="header__down-dropdowns-item-list-item-link">Фридрих</a>
+                  </li>
+                  <li class="header__down-dropdowns-item-list-item header__down-dropdowns-item-list-item_name_leonardo">
+                    <a href="#" class="header__down-dropdowns-item-list-item-link">Леонардо</a>
+                  </li>
+                  <li class="header__down-dropdowns-item-list-item header__down-dropdowns-item-list-item_name_verrocchio">
+                    <a href="#" class="header__down-dropdowns-item-list-item-link">Верроккьо</a>
+                  </li>
+                  <li class="header__down-dropdowns-item-list-item header__down-dropdowns-item-list-item_name_tintoretto">
+                    <a href="#" class="header__down-dropdowns-item-list-item-link">Тинторетто</a>
+                  </li>
+                  <li class="header__down-dropdowns-item-list-item header__down-dropdowns-item-list-item_name_friedrich">
+                    <a href="#" class="header__down-dropdowns-item-list-item-link">Фридрих</a>
+                  </li>
+                  <li class="header__down-dropdowns-item-list-item header__down-dropdowns-item-list-item_name_leonardo">
+                    <a href="#" class="header__down-dropdowns-item-list-item-link">Леонардо</a>
+                  </li>
+                  <li class="header__down-dropdowns-item-list-item header__down-dropdowns-item-list-item_name_verrocchio">
+                    <a href="#" class="header__down-dropdowns-item-list-item-link">Верроккьо</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="header__down-dropdowns-item">
+              <button class="header__down-dropdowns-item-btn">
+                Футуризм
+                <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 1L6 6L1 1" stroke="white"/></svg>
+              </button>
+              <div class="header__down-dropdowns-item-list-container">
+                <ul class="header__down-dropdowns-item-list">
+                  <li class="header__down-dropdowns-item-list-item header__down-dropdowns-item-list-item_name_tintoretto">
+                    <a href="#" class="header__down-dropdowns-item-list-item-link">Тинторетто</a>
+                  </li>
+                  <li class="header__down-dropdowns-item-list-item header__down-dropdowns-item-list-item_name_friedrich">
+                    <a href="#" class="header__down-dropdowns-item-list-item-link">Фридрих</a>
+                  </li>
+                  <li class="header__down-dropdowns-item-list-item header__down-dropdowns-item-list-item_name_leonardo">
+                    <a href="#" class="header__down-dropdowns-item-list-item-link">Леонардо</a>
+                  </li>
+                  <li class="header__down-dropdowns-item-list-item header__down-dropdowns-item-list-item_name_verrocchio">
+                    <a href="#" class="header__down-dropdowns-item-list-item-link">Верроккьо</a>
+                  </li>
+                  <li class="header__down-dropdowns-item-list-item header__down-dropdowns-item-list-item_name_tintoretto">
+                    <a href="#" class="header__down-dropdowns-item-list-item-link">Тинторетто</a>
+                  </li>
+                  <li class="header__down-dropdowns-item-list-item header__down-dropdowns-item-list-item_name_friedrich">
+                    <a href="#" class="header__down-dropdowns-item-list-item-link">Фридрих</a>
+                  </li>
+                  <li class="header__down-dropdowns-item-list-item header__down-dropdowns-item-list-item_name_leonardo">
+                    <a href="#" class="header__down-dropdowns-item-list-item-link">Леонардо</a>
+                  </li>
+                  <li class="header__down-dropdowns-item-list-item header__down-dropdowns-item-list-item_name_verrocchio">
+                    <a href="#" class="header__down-dropdowns-item-list-item-link">Верроккьо</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>  
+        </div>
+        <div class="header__down-container-right">
+          <div class="header__down-desktop-search">
+            <form class="header__down-desktop-search-form" action="https://jsonplaceholder.typicode.com/posts" method="POST" autocomplete="on">
+              <button class="header__down-desktop-search__form_btn-submit" type="submit" aria-label="начать поиск"></button>
+              <input class="header__down-desktop-search__form-field" type="text" name="query" placeholder="Поиск по сайту" required>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slider">
+      <div class="slider__box swiper animate__animated animate__pulse animate__infinite">
+        <div class="slider__items-list swiper-wrapper">
+          <div class="slider__item swiper-slide slider__item-1"></div>
+          <div class="slider__item swiper-slide slider__item-2"></div>
+          <div class="slider__item swiper-slide slider__item-3"></div>
+        </div>
+      </div>
+      <div class="slider__info-container">
+        <div class="slider__info-up">
+          <h1 class="slider__title">Прикоснитесь к&nbsp;прекрасному</h1>
+          <p class="slider__description">Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</p>
+        </div>
+        <a class="slider__link" href="#">Подписаться на рассылку</a>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="about">
+      <div class="container-fluid about__container">
+        <h2 class="container-title about__container-title">О нас</h2>
+        <p class="about__text">Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта влечет за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определенных слоев населения, а значит, должны быть разоблачены.</p>
+      </div>
+    </section>
+    <section class="gallery">
+      <div class="container-fluid gallery__container">
+        <div class="gallery__left-container">
+          <div class="gallery__left-container-up">
+            <h2 class="container-title gallery__container-title">Галерея</h2>
+            <p class="gallery__filter-title">Фильтр:</p>
+            <select name="gallery-filter" id="gallery-filter" aria-label="Фильтр для галереи">
+              <option value="" selected disabled>Живопись</option>
+              <option value="drawing">Рисунок</option>
+              <option value="sculpture">Скульптура</option>
+            </select> 
+          </div>
+          <p class="gallery__note">Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a class="authorization-link" href="#">авторизуйтесь</a>, либо воспользуйтесь лицензией.</p>
+        </div>
+        <div class="gallery__right-container">
+          <div class="gallery__btns">
+            <button class="gallery__navi-prev"></button>
+            <div class="gallery__navi"></div>
+            <button class="gallery__navi-next"></button>
+          </div>
+          <div class="gallery__images-box swiper">     
+            <div class="gallery__images swiper-wrapper">
+              <button class="gallery__item swiper-slide">
+                <picture>
+                  <source srcset="/img/gallery/gallery320/1.png" media="(max-width:767px)">
+                  <source srcset="/img/gallery/gallery768/1.png" media="(max-width:1020px)">
+                  <source srcset="/img/gallery/gallery1024/1.png" media="(max-width:1200px)">
+                  <img class="gallery__item-img" src="/img/gallery/1.png" alt="gallery_up-item_1.jpg">
+                </picture>  
+              </button>
+              <button class="gallery__item swiper-slide">
+                <picture>
+                  <source srcset="/img/gallery/gallery320/2.png" media="(max-width:767px)">
+                  <source srcset="/img/gallery/gallery768/2.png" media="(max-width:1020px)">
+                  <source srcset="/img/gallery/gallery1024/2.png" media="(max-width:1200px)">
+                  <img class="gallery__item-img" src="/img/gallery/2.png" alt="gallery_down-item_1.jpg">
+                </picture> 
+              </button>
+              <button class="gallery__item swiper-slide">
+                <picture>
+                  <source srcset="/img/gallery/gallery320/3.png" media="(max-width:767px)">
+                  <source srcset="/img/gallery/gallery768/3.png" media="(max-width:1020px)">
+                  <source srcset="/img/gallery/gallery1024/3.png" media="(max-width:1200px)">
+                  <img class="gallery__item-img" src="/img/gallery/3.png" alt="gallery_up-item_2.jpg">
+                </picture>
+              </button>
+              <button class="gallery__item swiper-slide">
+                <picture>
+                  <source srcset="/img/gallery/gallery320/4.png" media="(max-width:767px)">
+                  <source srcset="/img/gallery/gallery768/4.png" media="(max-width:1020px)">
+                  <source srcset="/img/gallery/gallery1024/4.png" media="(max-width:1200px)">
+                  <img class="gallery__item-img" src="/img/gallery/4.png" alt="gallery_down-item_2.jpg">
+                </picture>
+              </button>
+              <button class="gallery__item swiper-slide">
+                <picture>
+                  <source srcset="/img/gallery/gallery320/5.png" media="(max-width:767px)">
+                  <source srcset="/img/gallery/gallery768/5.png" media="(max-width:1020px)">
+                  <source srcset="/img/gallery/gallery1024/5.png" media="(max-width:1200px)">
+                  <img class="gallery__item-img" src="/img/gallery/5.png" alt="gallery_up-item_3.jpg">
+                </picture>
+              </button>
+              <button class="gallery__item swiper-slide">
+                <picture>
+                  <source srcset="/img/gallery/gallery320/6.png" media="(max-width:767px)">
+                  <source srcset="/img/gallery/gallery768/6.png" media="(max-width:1020px)">
+                  <source srcset="/img/gallery/gallery1024/6.png" media="(max-width:1200px)">
+                  <img class="gallery__item-img" src="/img/gallery/6.png" alt="gallery_down-item_3.jpg">
+                </picture>
+              </button>
+              <button class="gallery__item swiper-slide">
+                <picture>
+                  <source srcset="/img/gallery/gallery320/7.png" media="(max-width:767px)">
+                  <source srcset="/img/gallery/gallery768/7.png" media="(max-width:1020px)">
+                  <source srcset="/img/gallery/gallery1024/7.png" media="(max-width:1200px)">
+                  <img class="gallery__item-img" src="/img/gallery/7.png" alt="gallery_up-item_4.jpg">
+                </picture>
+              </button>
+              <button class="gallery__item swiper-slide">
+                <picture>
+                  <source srcset="/img/gallery/gallery320/8.png" media="(max-width:767px)">
+                  <source srcset="/img/gallery/gallery768/8.png" media="(max-width:1020px)">
+                  <source srcset="/img/gallery/gallery1024/8.png" media="(max-width:1200px)">
+                  <img class="gallery__item-img" src="/img/gallery/8.png" alt="gallery_down-item_4.jpg">
+                </picture>
+              </button>
+              <button class="gallery__item swiper-slide">
+                <picture>
+                  <source srcset="/img/gallery/gallery320/9.png" media="(max-width:767px)">
+                  <source srcset="/img/gallery/gallery768/9.png" media="(max-width:1020px)">
+                  <source srcset="/img/gallery/gallery1024/9.png" media="(max-width:1200px)">
+                  <img class="gallery__item-img" src="/img/gallery/9.png" alt="gallery_up-item_5.jpg">
+                </picture>
+              </button>
+              <button class="gallery__item swiper-slide">
+                <picture>
+                  <source srcset="/img/gallery/gallery320/10.png" media="(max-width:767px)">
+                  <source srcset="/img/gallery/gallery768/10.png" media="(max-width:1020px)">
+                  <source srcset="/img/gallery/gallery1024/10.png" media="(max-width:1200px)">
+                  <img class="gallery__item-img" src="/img/gallery/10.png" alt="gallery_down-item_5.jpg">
+                </picture>
+              </button>
+              <button class="gallery__item swiper-slide">
+                <picture>
+                  <source srcset="/img/gallery/gallery320/11.png" media="(max-width:767px)">
+                  <source srcset="/img/gallery/gallery768/11.png" media="(max-width:1020px)">
+                  <source srcset="/img/gallery/gallery1024/11.png" media="(max-width:1200px)">
+                  <img class="gallery__item-img" src="/img/gallery/11.png" alt="gallery_up-item_6.jpg">
+                </picture>
+              </button>
+              <button class="gallery__item swiper-slide">
+                <picture>
+                  <source srcset="/img/gallery/gallery320/12.png" media="(max-width:767px)">
+                  <source srcset="/img/gallery/gallery768/12.png" media="(max-width:1020px)">
+                  <source srcset="/img/gallery/gallery1024/12.png" media="(max-width:1200px)">
+                  <img class="gallery__item-img" src="/img/gallery/12.png" alt="gallery_down-item_6.jpg">
+                </picture>
+              </button>
+              <button class="gallery__item swiper-slide">
+                <picture>
+                  <source srcset="/img/gallery/gallery320/13.png" media="(max-width:767px)">
+                  <source srcset="/img/gallery/gallery768/13.png" media="(max-width:1020px)">
+                  <source srcset="/img/gallery/gallery1024/13.png" media="(max-width:1200px)">
+                  <img class="gallery__item-img" src="/img/gallery/13.png" alt="gallery_up-item_7.jpg">
+                </picture>
+              </button>
+              <button class="gallery__item swiper-slide">
+                <picture>
+                  <source srcset="/img/gallery/gallery320/14.png" media="(max-width:767px)">
+                  <source srcset="/img/gallery/gallery768/14.png" media="(max-width:1020px)">
+                  <source srcset="/img/gallery/gallery1024/14.png" media="(max-width:1200px)">
+                  <img class="gallery__item-img" src="/img/gallery/14.png" alt="gallery_down-item_7.jpg">
+                </picture>
+              </button>
+              <button class="gallery__item swiper-slide">
+                <picture>
+                  <source srcset="/img/gallery/gallery320/15.png" media="(max-width:767px)">
+                  <source srcset="/img/gallery/gallery768/15.png" media="(max-width:1020px)">
+                  <source srcset="/img/gallery/gallery1024/15.png" media="(max-width:1200px)">
+                  <img class="gallery__item-img" src="/img/gallery/15.png" alt="gallery_up-item_8.jpg">
+                </picture>
+              </button>
+              <button class="gallery__item swiper-slide">
+                <picture>
+                  <source srcset="/img/gallery/gallery320/16.png" media="(max-width:767px)">
+                  <source srcset="/img/gallery/gallery768/16.png" media="(max-width:1020px)">
+                  <source srcset="/img/gallery/gallery1024/16.png" media="(max-width:1200px)">
+                  <img class="gallery__item-img" src="/img/gallery/16.png" alt="gallery_down-item_8.jpg">
+                </picture>
+              </button>
+              <button class="gallery__item swiper-slide">
+                <picture>
+                  <source srcset="/img/gallery/gallery320/17.png" media="(max-width:767px)">
+                  <source srcset="/img/gallery/gallery768/17.png" media="(max-width:1020px)">
+                  <source srcset="/img/gallery/gallery1024/17.png" media="(max-width:1200px)">
+                  <img class="gallery__item-img" src="/img/gallery/17.png" alt="gallery_up-item_9.jpg">
+                </picture>
+              </button>
+              <button class="gallery__item swiper-slide">
+                <picture>
+                  <source srcset="/img/gallery/gallery320/18.png" media="(max-width:767px)">
+                  <source srcset="/img/gallery/gallery768/18.png" media="(max-width:1020px)">
+                  <source srcset="/img/gallery/gallery1024/18.png" media="(max-width:1200px)">
+                  <img class="gallery__item-img" src="/img/gallery/18.png" alt="gallery_down-item_9.jpg">
+                </picture>
+              </button>
+              <button class="gallery__item swiper-slide">
+                <picture>
+                  <source srcset="/img/gallery/gallery320/19.png" media="(max-width:767px)">
+                  <source srcset="/img/gallery/gallery768/19.png" media="(max-width:1020px)">
+                  <source srcset="/img/gallery/gallery1024/19.png" media="(max-width:1200px)">
+                  <img class="gallery__item-img" src="/img/gallery/19.png" alt="gallery_up-item_10.jpg">
+                </picture>
+              </button>
+              <button class="gallery__item swiper-slide">
+                <picture>
+                  <source srcset="/img/gallery/gallery320/20.png" media="(max-width:767px)">
+                  <source srcset="/img/gallery/gallery768/20.png" media="(max-width:1020px)">
+                  <source srcset="/img/gallery/gallery1024/20.png" media="(max-width:1200px)">
+                  <img class="gallery__item-img" src="/img/gallery/20.png" alt="gallery_down-item_10.jpg">
+                </picture>
+              </button>
+              <button class="gallery__item swiper-slide">
+                <picture>
+                  <source srcset="/img/gallery/gallery320/21.png" media="(max-width:767px)">
+                  <source srcset="/img/gallery/gallery768/21.png" media="(max-width:1020px)">
+                  <source srcset="/img/gallery/gallery1024/21.png" media="(max-width:1200px)">
+                  <img class="gallery__item-img" src="/img/gallery/21.png" alt="gallery_up-item_11.jpg">
+                </picture>
+              </button>
+              <button class="gallery__item swiper-slide">
+                <picture>
+                  <source srcset="/img/gallery/gallery320/22.png" media="(max-width:767px)">
+                  <source srcset="/img/gallery/gallery768/22.png" media="(max-width:1020px)">
+                  <source srcset="/img/gallery/gallery1024/22.png" media="(max-width:1200px)">
+                  <img class="gallery__item-img" src="/img/gallery/22.png" alt="gallery_down-item_11.jpg">
+                </picture>
+              </button>
+              <button class="gallery__item swiper-slide">
+                <picture>
+                  <source srcset="/img/gallery/gallery320/23.png" media="(max-width:767px)">
+                  <source srcset="/img/gallery/gallery768/23.png" media="(max-width:1020px)">
+                  <source srcset="/img/gallery/gallery1024/23.png" media="(max-width:1200px)">
+                  <img class="gallery__item-img" src="/img/gallery/23.png" alt="gallery_up-item_12.jpg">
+                </picture>
+              </button>
+              <button class="gallery__item swiper-slide">
+                <picture>
+                  <source srcset="/img/gallery/gallery320/24.png" media="(max-width:767px)">
+                  <source srcset="/img/gallery/gallery768/24..png" media="(max-width:1020px)">
+                  <source srcset="/img/gallery/gallery1024/24.png" media="(max-width:1200px)">
+                  <img class="gallery__item-img" src="/img/gallery/24.png" alt="gallery_down-item_12.jpg">
+                </picture>
+              </button>
+            </div>
+          </div>
+          <p class="gallery__note-mobile">Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a class="authorization-link" href="#">авторизуйтесь</a>, либо воспользуйтесь лицензией.</p>
+        </div>
+      </div>
+    </section>
+    <section class="catalog">
+      <div class="container-fluid catalog__container">
+        <div class="catalog__title">
+          <h2 class="container-title catalog__container-title">Каталог</h2>
+          <div class="catalog__languages">
+              <a href="#" class="catalog__languages-link" data-tab="1" aria-label="Французский язык">
+                <picture>
+                  <source srcset="/img/catalog/flag320.png" media="(max-width:767px)">
+                  <img class="catalog__languages-img" src="/img/catalog/flag1.png" alt="Французский язык">
+                </picture>
+              </a>
+              <a href="#" class="catalog__languages-link" data-tab="2" aria-label="Немецкий язык">
+                <picture>
+                  <source srcset="/img/catalog/flag3201.png" media="(max-width:767px)">
+                  <img class="catalog__languages-img" src="/img/catalog/flag2.png" alt="Немецкий язык">
+                </picture>           
+              </a>
+              <a href="#" class="catalog__languages-link catalog__languages-link_active_true" data-tab="3" aria-label="Итальянский язык">
+                <picture>
+                  <source srcset="/img/catalog/flag3202.png" media="(max-width:767px)">
+                  <img class="catalog__languages-img" src="/img/catalog/flag3.png" alt="Итальянский язык">
+                </picture>
+              </a>
+              <a href="#" class="catalog__languages-link" data-tab="4" aria-label="Русский язык">
+                <picture>
+                  <source srcset="/img/catalog/flag3203.png" media="(max-width:767px)">
+                  <img class="catalog__languages-img" src="/img/catalog/flag4.png" alt="Русский язык">
+                </picture>
+              </a>
+              <a href="#" class="catalog__languages-link" data-tab="5" aria-label="Бельгийский язык">
+                <picture>
+                  <source srcset="/img/catalog/flag3204.png" media="(max-width:767px)">
+                  <img class="catalog__languages-img" src="/img/catalog/flag5.png" alt="Бельгийский язык">
+                </picture>
+              </a>
+          </div>
+        </div>
+        <div class="catalog__tabs">
+          <div class="catalog__tabs-item" data-target="1">    
+            <p class="catalog__tabs-item-description">Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.</p>
+            <div class="catalog__tabs-item-content">
+              <div class="catalog__tabs-item-left catalog__tabs-item-left_active_true" data-target="8">
+                <picture>
+                  <source srcset="/img/catalog/smol1.png" media="(max-width:767px)">
+                  <source srcset="/img/catalog/Frame.jpg" media="(max-width:1020px)">
+                  <source srcset="/img/catalog/Frame.jpg" media="(max-width:1200px)">
+                  <img class="catalog__tabs-painter-img" src="/img/catalog/catalog.img.png" alt="Заглушка">
+                </picture>
+                <p class="catalog__tabs-painter-title">Что мы о нём знаем?</p>
+                <p class="catalog__tabs-painter-description">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+                <a href="#gallery" class="catalog__tabs-accordion-item-content-link">В галерею</a>
+              </div>
+              <div class="catalog__tabs-item-right">
+                <div class="catalog__tabs-accordion" id="catalog__tabs-accordion-1">
+                  <div class="catalog__tabs-accordion-item">
+                    <h3 class="catalog__tabs-accordion-item-title">
+                      <span class="catalog__tabs-accordion-item-title-text">C 1400 по 1499 гг.</span>
+                      <button class="catalog__tabs-accordion-item-switch">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/><path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/></svg>
+                      </button>
+                    </h3>
+                    <div class="catalog__tabs-accordion-item-content">
+                      <div class="catalog__tabs-accordion-item-content">
+                        <div class="catalog__tabs-accordion-item-inner-with-img">
+                          <img class="catalog__tabs-accordion-item-img" src="/img/catalog/Rectangle.png" alt="Заглушка">
+                          <div class="catalog__tabs-accordion-item-inner-with-img-text-box">
+                            <p class="catalog__tabs-accordion-item-content-title">C'est vide ici pour l'instant</p>
+                            <p class="catalog__tabs-accordion-item-content-text">Et dans la galerie, vous pouvez toujours trouver quelque chose d'intéressant pour vous-même</p>
+                            <a href="#gallery" class="catalog__tabs-accordion-item-content-link">Vers la galerie</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>      
+                  <div class="catalog__tabs-accordion-item">
+                    <h3 class="catalog__tabs-accordion-item-title">
+                      <span class="catalog__tabs-accordion-item-title-text">C 1500 по 1599 гг.</span>
+                      <button class="catalog__tabs-accordion-item-switch">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/><path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/></svg>
+                      </button>
+                    </h3>
+                    <div class="catalog__tabs-accordion-item-content">
+                      <div class="catalog__tabs-accordion-item-content">
+                        <div class="catalog__tabs-accordion-item-inner-with-img">
+                          <img class="catalog__tabs-accordion-item-img" src="/img/catalog/Rectangle.png" alt="Заглушка">
+                          <div class="catalog__tabs-accordion-item-inner-with-img-text-box">
+                            <p class="catalog__tabs-accordion-item-content-title">C'est vide ici pour l'instant</p>
+                            <p class="catalog__tabs-accordion-item-content-text">Et dans la galerie, vous pouvez toujours trouver quelque chose d'intéressant pour vous-même</p>
+                            <a href="#gallery" class="catalog__tabs-accordion-item-content-link">Vers la galerie</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>   
+                  <div class="catalog__tabs-accordion-item">
+                    <h3 class="catalog__tabs-accordion-item-title">
+                      <span class="catalog__tabs-accordion-item-title-text">C 1600 по 1699 гг.</span>
+                      <button class="catalog__tabs-accordion-item-switch">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/><path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/></svg>
+                      </button>
+                    </h3>
+                     <div class="catalog__tabs-accordion-item-content">
+                      <div class="catalog__tabs-accordion-item-content">
+                        <div class="catalog__tabs-accordion-item-inner-with-img">
+                          <img class="catalog__tabs-accordion-item-img" src="/img/catalog/Rectangle.png" alt="Заглушка">
+                          <div class="catalog__tabs-accordion-item-inner-with-img-text-box">
+                            <p class="catalog__tabs-accordion-item-content-title">C'est vide ici pour l'instant</p>
+                            <p class="catalog__tabs-accordion-item-content-text">Et dans la galerie, vous pouvez toujours trouver quelque chose d'intéressant pour vous-même</p>
+                            <a href="#gallery" class="catalog__tabs-accordion-item-content-link">Vers la galerie</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog__tabs-accordion-item">
+                    <h3 class="catalog__tabs-accordion-item-title">
+                      <span class="catalog__tabs-accordion-item-title-text">C 1700 по 1799 гг.</span>
+                      <button class="catalog__tabs-accordion-item-switch">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/><path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/></svg>
+                      </button>
+                    </h3>
+                    <div class="catalog__tabs-accordion-item-content">
+                      <div class="catalog__tabs-accordion-item-content">
+                        <div class="catalog__tabs-accordion-item-inner-with-img">
+                          <img class="catalog__tabs-accordion-item-img" src="/img/catalog/Rectangle.png" alt="Заглушка">
+                          <div class="catalog__tabs-accordion-item-inner-with-img-text-box">
+                            <p class="catalog__tabs-accordion-item-content-title">C'est vide ici pour l'instant</p>
+                            <p class="catalog__tabs-accordion-item-content-text">Et dans la galerie, vous pouvez toujours trouver quelque chose d'intéressant pour vous-même</p>
+                            <a href="#gallery" class="catalog__tabs-accordion-item-content-link">Vers la galerie</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog__tabs-accordion-item">
+                    <h3 class="catalog__tabs-accordion-item-title">
+                      <span class="catalog__tabs-accordion-item-title-text">C 1800 по 1899 гг.</span>
+                      <button class="catalog__tabs-accordion-item-switch">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/><path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/></svg>
+                      </button>
+                    </h3>
+                    <div class="catalog__tabs-accordion-item-content">
+                      <div class="catalog__tabs-accordion-item-content">
+                        <div class="catalog__tabs-accordion-item-inner-with-img">
+                          <img class="catalog__tabs-accordion-item-img" src="/img/catalog/Rectangle.png" alt="Заглушка">
+                          <div class="catalog__tabs-accordion-item-inner-with-img-text-box">
+                            <p class="catalog__tabs-accordion-item-content-title">C'est vide ici pour l'instant</p>
+                            <p class="catalog__tabs-accordion-item-content-text">Et dans la galerie, vous pouvez toujours trouver quelque chose d'intéressant pour vous-même</p>
+                            <a href="#gallery" class="catalog__tabs-accordion-item-content-link">Vers la galerie</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>   
+                  <div class="catalog__tabs-accordion-item">
+                    <h3 class="catalog__tabs-accordion-item-title">
+                      <span class="catalog__tabs-accordion-item-title-text">C 1900 по 1999 гг.</span>
+                      <button class="catalog__tabs-accordion-item-switch">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/><path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/></svg>
+                      </button>
+                    </h3>
+                    <div class="catalog__tabs-accordion-item-content">
+                      <div class="catalog__tabs-accordion-item-content">
+                        <div class="catalog__tabs-accordion-item-inner-with-img">
+                          <img class="catalog__tabs-accordion-item-img" src="/img/catalog/Rectangle.png" alt="Заглушка">
+                          <div class="catalog__tabs-accordion-item-inner-with-img-text-box">
+                            <p class="catalog__tabs-accordion-item-content-title">C'est vide ici pour l'instant</p>
+                            <p class="catalog__tabs-accordion-item-content-text">Et dans la galerie, vous pouvez toujours trouver quelque chose d'intéressant pour vous-même</p>
+                            <a href="#gallery" class="catalog__tabs-accordion-item-content-link">Vers la galerie</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>            
+                  <div class="catalog__tabs-accordion-item">
+                    <h3 class="catalog__tabs-accordion-item-title">
+                      <span class="catalog__tabs-accordion-item-title-text">C 2000 г.</span>
+                      <button class="catalog__tabs-accordion-item-switch">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/><path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/></svg>
+                      </button>
+                    </h3>
+                    <div class="catalog__tabs-accordion-item-content">
+                      <div class="catalog__tabs-accordion-item-content">
+                        <div class="catalog__tabs-accordion-item-inner-with-img">
+                          <img class="catalog__tabs-accordion-item-img" src="/img/catalog/Rectangle.png" alt="Заглушка">
+                          <div class="catalog__tabs-accordion-item-inner-with-img-text-box">
+                            <p class="catalog__tabs-accordion-item-content-title">C'est vide ici pour l'instant</p>
+                            <p class="catalog__tabs-accordion-item-content-text">Et dans la galerie, vous pouvez toujours trouver quelque chose d'intéressant pour vous-même</p>
+                            <a href="#gallery" class="catalog__tabs-accordion-item-content-link">Vers la galerie</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>         
+                </div>          
+              </div>
+            </div>
+          </div>
+          <div class="catalog__tabs-item" data-target="2">    
+            <p class="catalog__tabs-item-description">Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.</p>
+            <div class="catalog__tabs-item-content">
+              <div class="catalog__tabs-item-left catalog__tabs-item-left_active_true" data-target="8">
+                <picture>
+                  <source srcset="/img/catalog/smol1.png" media="(max-width:767px)">
+                  <source srcset="/img/catalog/Frame.jpg" media="(max-width:1020px)">
+                  <source srcset="/img/catalog/Frame.jpg" media="(max-width:1200px)">
+                  <img class="catalog__tabs-painter-img" src="/img/catalog/catalog.img.png" alt="Заглушка">
+                </picture>
+                <p class="catalog__tabs-painter-title">Что мы о нём знаем?</p>
+                <p class="catalog__tabs-painter-description">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+                <a href="#gallery" class="catalog__tabs-accordion-item-content-link">В галерею</a>
+              </div>  
+              <div class="catalog__tabs-item-right">
+                <div class="catalog__tabs-accordion" id="catalog__tabs-accordion-2">
+                  <div class="catalog__tabs-accordion-item">
+                    <h3 class="catalog__tabs-accordion-item-title">
+                      <span class="catalog__tabs-accordion-item-title-text">C 1400 по 1499 гг.</span>
+                      <button class="catalog__tabs-accordion-item-switch">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/><path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/></svg>
+                      </button>
+                    </h3>
+                    <div class="catalog__tabs-accordion-item-content">
+                      <div class="catalog__tabs-accordion-item-content">
+                        <div class="catalog__tabs-accordion-item-inner-with-img">
+                          <img class="catalog__tabs-accordion-item-img" src="/img/catalog/Rectangle.png" alt="Заглушка">
+                          <div class="catalog__tabs-accordion-item-inner-with-img-text-box">
+                            <p class="catalog__tabs-accordion-item-content-title">C'est vide ici pour l'instant</p>
+                            <p class="catalog__tabs-accordion-item-content-text">Et dans la galerie, vous pouvez toujours trouver quelque chose d'intéressant pour vous-même</p>
+                            <a href="#gallery" class="catalog__tabs-accordion-item-content-link">Vers la galerie</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>      
+                  <div class="catalog__tabs-accordion-item">
+                    <h3 class="catalog__tabs-accordion-item-title">
+                      <span class="catalog__tabs-accordion-item-title-text">C 1500 по 1599 гг.</span>
+                      <button class="catalog__tabs-accordion-item-switch">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/><path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/></svg>
+                      </button>
+                    </h3>
+                    <div class="catalog__tabs-accordion-item-content">
+                      <div class="catalog__tabs-accordion-item-content">
+                        <div class="catalog__tabs-accordion-item-inner-with-img">
+                          <img class="catalog__tabs-accordion-item-img" src="/img/catalog/Rectangle.png" alt="Заглушка">
+                          <div class="catalog__tabs-accordion-item-inner-with-img-text-box">
+                            <p class="catalog__tabs-accordion-item-content-title">C'est vide ici pour l'instant</p>
+                            <p class="catalog__tabs-accordion-item-content-text">Et dans la galerie, vous pouvez toujours trouver quelque chose d'intéressant pour vous-même</p>
+                            <a href="#gallery" class="catalog__tabs-accordion-item-content-link">Vers la galerie</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>   
+                  <div class="catalog__tabs-accordion-item">
+                    <h3 class="catalog__tabs-accordion-item-title">
+                      <span class="catalog__tabs-accordion-item-title-text">C 1600 по 1699 гг.</span>
+                      <button class="catalog__tabs-accordion-item-switch">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/><path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/></svg>
+                      </button>
+                    </h3>
+                    <div class="catalog__tabs-accordion-item-content">
+                      <div class="catalog__tabs-accordion-item-content">
+                        <div class="catalog__tabs-accordion-item-inner-with-img">
+                          <img class="catalog__tabs-accordion-item-img" src="/img/catalog/Rectangle.png" alt="Заглушка">
+                          <div class="catalog__tabs-accordion-item-inner-with-img-text-box">
+                            <p class="catalog__tabs-accordion-item-content-title">C'est vide ici pour l'instant</p>
+                            <p class="catalog__tabs-accordion-item-content-text">Et dans la galerie, vous pouvez toujours trouver quelque chose d'intéressant pour vous-même</p>
+                            <a href="#gallery" class="catalog__tabs-accordion-item-content-link">Vers la galerie</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog__tabs-accordion-item">
+                    <h3 class="catalog__tabs-accordion-item-title">
+                      <span class="catalog__tabs-accordion-item-title-text">C 1700 по 1799 гг.</span>
+                      <button class="catalog__tabs-accordion-item-switch">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/><path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/></svg>
+                      </button>
+                    </h3>
+                    <div class="catalog__tabs-accordion-item-content">
+                      <div class="catalog__tabs-accordion-item-content">
+                        <div class="catalog__tabs-accordion-item-inner-with-img">
+                          <img class="catalog__tabs-accordion-item-img" src="/img/catalog/Rectangle.png" alt="Заглушка">
+                          <div class="catalog__tabs-accordion-item-inner-with-img-text-box">
+                            <p class="catalog__tabs-accordion-item-content-title">C'est vide ici pour l'instant</p>
+                            <p class="catalog__tabs-accordion-item-content-text">Et dans la galerie, vous pouvez toujours trouver quelque chose d'intéressant pour vous-même</p>
+                            <a href="#gallery" class="catalog__tabs-accordion-item-content-link">Vers la galerie</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog__tabs-accordion-item">
+                    <h3 class="catalog__tabs-accordion-item-title">
+                      <span class="catalog__tabs-accordion-item-title-text">C 1800 по 1899 гг.</span>
+                      <button class="catalog__tabs-accordion-item-switch">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/><path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/></svg>
+                      </button>
+                    </h3>
+                    <div class="catalog__tabs-accordion-item-content">
+                      <div class="catalog__tabs-accordion-item-content">
+                        <div class="catalog__tabs-accordion-item-inner-with-img">
+                          <img class="catalog__tabs-accordion-item-img" src="/img/catalog/Rectangle.png" alt="Заглушка">
+                          <div class="catalog__tabs-accordion-item-inner-with-img-text-box">
+                            <p class="catalog__tabs-accordion-item-content-title">C'est vide ici pour l'instant</p>
+                            <p class="catalog__tabs-accordion-item-content-text">Et dans la galerie, vous pouvez toujours trouver quelque chose d'intéressant pour vous-même</p>
+                            <a href="#gallery" class="catalog__tabs-accordion-item-content-link">Vers la galerie</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>   
+                  <div class="catalog__tabs-accordion-item">
+                    <h3 class="catalog__tabs-accordion-item-title">
+                      <span class="catalog__tabs-accordion-item-title-text">C 1900 по 1999 гг.</span>
+                      <button class="catalog__tabs-accordion-item-switch">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/><path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/></svg>
+                      </button>
+                    </h3>
+                    <div class="catalog__tabs-accordion-item-content">
+                      <div class="catalog__tabs-accordion-item-content">
+                        <div class="catalog__tabs-accordion-item-inner-with-img">
+                          <img class="catalog__tabs-accordion-item-img" src="/img/catalog/Rectangle.png" alt="Заглушка">
+                          <div class="catalog__tabs-accordion-item-inner-with-img-text-box">
+                            <p class="catalog__tabs-accordion-item-content-title">C'est vide ici pour l'instant</p>
+                            <p class="catalog__tabs-accordion-item-content-text">Et dans la galerie, vous pouvez toujours trouver quelque chose d'intéressant pour vous-même</p>
+                            <a href="#gallery" class="catalog__tabs-accordion-item-content-link">Vers la galerie</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>            
+                  <div class="catalog__tabs-accordion-item">
+                    <h3 class="catalog__tabs-accordion-item-title">
+                      <span class="catalog__tabs-accordion-item-title-text">C 2000 г.</span>
+                      <button class="catalog__tabs-accordion-item-switch">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/><path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/></svg>
+                      </button>
+                    </h3>
+                    <div class="catalog__tabs-accordion-item-content">
+                      <div class="catalog__tabs-accordion-item-content">
+                        <div class="catalog__tabs-accordion-item-inner-with-img">
+                          <img class="catalog__tabs-accordion-item-img" src="/img/catalog/Rectangle.png" alt="Заглушка">
+                          <div class="catalog__tabs-accordion-item-inner-with-img-text-box">
+                            <p class="catalog__tabs-accordion-item-content-title">C'est vide ici pour l'instant</p>
+                            <p class="catalog__tabs-accordion-item-content-text">Et dans la galerie, vous pouvez toujours trouver quelque chose d'intéressant pour vous-même</p>
+                            <a href="#gallery" class="catalog__tabs-accordion-item-content-link">Vers la galerie</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>         
+                </div>          
+              </div>
+            </div>
+          </div>
+          <div class="catalog__tabs-item catalog__tabs-item_active_true" data-target="3">    
+            <p class="catalog__tabs-item-description">Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.</p>
+            <div class="catalog__tabs-item-content">
+              <div class="catalog__tabs-item-left" data-target="1">
+                <picture>
+                  <img class="catalog__tabs-painter-img" src="/img/catalog/content/benedetto-di-bindo.jpeg" alt="Бенедетто ди Биндо">
+                </picture>
+                <p class="catalog__tabs-painter-title">Бенедетто ди Биндо</p>
+                <p class="catalog__tabs-painter-subtitle">1380—85 — 19 сентября 1417</p>
+                <p class="catalog__tabs-painter-description">Итальянский художник сиенской школы. Бенедетто ди Биндо остался в истории искусства как сиенский художник, так сказать, «второго ряда», несмотря на то, что за свою короткую жизнь он выполнил ряд весьма престижных заказов, включая работы в Сиенском соборе.</p>
+              </div>
+              <div class="catalog__tabs-item-left" data-target="2">
+                <picture>
+                  <img class="catalog__tabs-painter-img" src="/img/catalog/content/vecchietta.jpg" alt="Веккьетта">
+                </picture>
+                <p class="catalog__tabs-painter-title">Веккьетта</p>
+                <p class="catalog__tabs-painter-subtitle">1412 — 6 июня 1480</p>
+                <p class="catalog__tabs-painter-description">Итальянский художник, скульптор, архитектор и ювелир. Сиенская школа. О Веккьетте сообщает в своих «Жизнеописаниях» Джорджо Вазари и описывает его как человека мрачного и нелюдимого, вечно погружённого в раздумья, и потому прожившего недолго. Позднейшие исследователи пытались имя этого художника увязать с какими-либо архивными данными. Сейчас общепризнанной считается версия, что описанный Вазари Веккьетта — это Лоренцо ди Пьетро ди Джованни, который был крещён в Сиене в 1410 году. Имя этого человека появляется в документах в 1428 году среди членов гильдии художников Сиены.</p>
+              </div>
+              <div class="catalog__tabs-item-left" data-target="3">
+                <picture>
+                  <img class="catalog__tabs-painter-img" src="/img/catalog/content/bernardo-parentino.jpeg" alt="Парентино, Бернардо">
+                </picture>
+                <p class="catalog__tabs-painter-title">Парентино, Бернардо</p>
+                <p class="catalog__tabs-painter-subtitle">1437 — 28 откября 1531</p>
+                <p class="catalog__tabs-painter-description">Итальянский художник эпохи Ренессанса. В основном работал в Падуе. Родился в городе Паренцо, принадлежащем венецианской республике и находящимся на побережье полуострова Истрия. Там же, вероятнее всего, получил начальное образование. Умер в городе Виченца. Испытал сильное влияние, а возможно и был учеником Андреа Мантеньи. Также художник известен под именами Бернардо Паренцано, Бернардо да Паренцо, Бернардино Парентино. Ошибочно отождествлялся с августинским монахом Лоренцо. Бернардо Парентино написал Сцены жизни святого Бенедикта для монастыря святой Жустины в Падуе и Рождество, которое находится в галерее Академии в Венеции. Также он создал Искушение святого Антония — ряд связанных общей темой картин, которые находятся в галерее Дориа-Памфили. Ему принадлежит также работа Поклонение волхвов. Для манеры художника характерно сильное внимание к деталям.</p>
+              </div>
+              <div class="catalog__tabs-item-left" data-target="4">
+                <picture>
+                  <img class="catalog__tabs-painter-img" src="/img/catalog/content/ambrogio-bergognone.jpeg" alt="Бергоньоне, Амброджо">
+                </picture>
+                <p class="catalog__tabs-painter-title">Бергоньоне, Амброджо</p>
+                <p class="catalog__tabs-painter-subtitle">1453 — 1523</p>
+                <p class="catalog__tabs-painter-description">Амброджо Бергоньоне или Боргоньоне, настоящее имя — Амброджо да Фоссано (итал. Ambrogio Bergognone, Ambrogio da Fossano, 1453, Фоссано, провинция Кунео — 1523, Милан) — итальянский художник ломбардской школы. Прозвище говорит о его тяготении к бургундской школе, по манере ему близок Винченцо Фоппа. Испытал влияние Леонардо да Винчи. Наиболее известен работами 1486—1494 в монастырской обители картезианцев Чертоза ди Павия. Позднее работал в Милане в базилике Сант-Эусторджо и церкви Сан-Сатиро, после 1497 — в Лоди, в 1512 — в Бергамо, незадолго до смерти — снова в Милане, в базилике Сан-Симпличано. Работы Бергоньоне представлены в музеях Бергамо, Милана (пинакотека Брера, музей Польди-Пеццоли), Турина, Парижа, Лондона, Нью-Йорка и др., одно из его полотен (Иаков Зеведеев, ок. 1500) находится в Эрмитаже.</p>
+              </div>
+              <div class="catalog__tabs-item-left" data-target="5">
+                <picture>
+                  <img class="catalog__tabs-painter-img" src="/img/catalog/content/andrea-verrocchio.jpeg" alt="Андреа Верроккьо">
+                </picture>
+                <p class="catalog__tabs-painter-title">Андреа Верроккьо</p>
+                <p class="catalog__tabs-painter-subtitle">1435 — 10 откября 1488</p>
+                <p class="catalog__tabs-painter-description">Андре́а дель Верро́ккьо, наст. имя Андреа ди Микеле Чони — скульптор и живописец эпохи Возрождения, представитель Флорентийской школы. Среди его учеников — Сандро Боттичелли, Пьетро Перуджино, Леонардо да Винчи и Лоренцо ди Креди.</p>
+              </div>
+              <div class="catalog__tabs-item-left" data-target="6">
+                <picture>
+                  <img class="catalog__tabs-painter-img" src="/img/catalog/content/pesellino.jpg" alt="Пезеллино">
+                </picture>
+                <p class="catalog__tabs-painter-title">Пезеллино</p>
+                <p class="catalog__tabs-painter-subtitle">1422 - июль 1457</p>
+                <p class="catalog__tabs-painter-description">Пезеллино, собств. Франческо ди Стефано (итал. Pesellino, Francesco di Stefano; род. ок. 1422 г. Флоренция — ум. 1457 г. Флоренция) — итальянский живописец. Итальянский историк искусства Джорджо Вазари составил небольшую биографию художника, в которой с восторгом отзывается о его творчестве, но, в то же время, перепутал в ней, кажется, всё, что только можно. Франческо ди Стефано родился в семье Стефано ди Франческо и его супруги Нанны, которая была старшей дочерью художника Джулиано д’Арриго по прозвищу Пезелло. В 1427 году, когда мальчику было всего 5 лет, его отец скончался, и ребёнок переселился к своему деду по материнской линии — Джулиано д’Арриго, мастерская которого находились на корсо Адимари во Флоренции (ныне это виа деи Кальцайоли). От деда к Франческо перешло и прозвище «Пезеллино» (то есть «маленький Пезелло»). В двадцатилетнем возрасте Франческо Пезеллино женился на Тарсии, дочери некоего Сильвестера из Роппо, о чём свидетельствует сохранившийся документ, датированный 22 ноября 1442 года.</p>
+              </div>
+              <div class="catalog__tabs-item-left" data-target="7">
+                <picture>
+                  <img class="catalog__tabs-painter-img" src="/img/catalog/content/francesco-bissolo.jpg" alt="Биссоло, Франческо">
+                </picture>
+                <p class="catalog__tabs-painter-title">Биссоло, Франческо</p>
+                <p class="catalog__tabs-painter-subtitle">1470 - 20 апреля 1554</p>
+                <p class="catalog__tabs-painter-description">Франческо Биссоло известный также, как Пьетро Франческо Биссоло (итал. Francesco Bissolo; 1470 или 1472, Тревизо — 20 апреля 1554, Венеция) — итальянский художник венецианской школы живописи. Сын художника. Ученик Джованни Беллини. С 1490 переехал в мастерскую Беллини. С 1492 по 1200 год работал в Венеции. Помогал учителю в работе над украшением Большого зала Совета Дворца дожей (Венеция). Принимал участие в создании украшений Церкви Иль Реденторе в Венеции. Художник эпохи Возрождения. В своём творчестве подражал Джорджоне. Работы художника хранятся ныне во многих музеях мира. В санкт-петербургском Эрмитаже находится его картина «Богоматерь с Младенцем Христом». В Британской Национальной галерее — «Мадонна с Младенцем со святыми и донатором». Ряд его полотен находится в музеях Варшавы, Лос-Анджелеса (Музей Нортона Саймона и Los Angeles County Museum of Art), Дэйтоновском институте искусств (штат Огайо, США) и др.</p>
+              </div>
+              <div class="catalog__tabs-item-left catalog__tabs-item-left_active_true" data-target="8">
+                <picture>
+                  <source srcset="/img/catalog/catalog320/image.jpg" media="(max-width:767px)">
+                  <source srcset="/img/catalog/catalog768/image.jpg" media="(max-width:1020px)">
+                  <source srcset="/img/catalog/catalog1024/image.jpg" media="(max-width:1200px)">
+                  <img class="catalog__tabs-painter-img" src="/img/catalog/boy.jpg" alt="Доменико Гирландайо">
+                </picture>
+                <h3 class="catalog__tabs-painter-title">Доменико Гирландайо</h3>
+                <p class="catalog__tabs-painter-subtitle">2 июня 1448 — 11 января 1494.</p>
+                <p class="catalog__tabs-painter-description">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+              </div>
+              <div class="catalog__tabs-item-left" data-target="9">
+                <picture>
+                  <img class="catalog__tabs-painter-img" src="/img/catalog/content/pietro-perugino.jpeg" alt="Пьетро Перуджино">
+                </picture>
+                <p class="catalog__tabs-painter-title">Пьетро Перуджино</p>
+                <p class="catalog__tabs-painter-subtitle">1448 — 1523</p>
+                <p class="catalog__tabs-painter-description">Пьетро Перуджино (итал. Pietro Perugino, дословно «Перуджийский», настоящее имя Пьетро ди Кристофоро Ваннуччи — Pietro di Cristoforo Vannucci; 1446—1524) — итальянский живописец эпохи Возрождения, представитель умбрийской школы, учитель Рафаэля. Родился в местечке Читта-делла-Пьеве в 35 км от Перуджи. После обучения у местного живописца в 1470 году приехал во Флоренцию и поступил в мастерскую Андреа Верроккьо. В 1481 году, будучи уже известным мастером, в числе лучших художников Италии приглашён папой Сикстом IV в Рим для участия в работах над декорированием Сикстинской капеллы. Работал во многих городах Италии, но более всего в Перудже, где он был главой большой мастерской. В 1480—1490-х годах Перуджино был одним из самых прославленных художников Италии. Самый же знаменитый из его учеников — Рафаэль Санти. Лучшими произведениями Перуджино считаются созданные до 1500 года. Выделяется фреска «Вручение ключей апостолу Петру», которая отличается стройностью композиции. Одна из самых известных картин — «Оплакивание Христа». После смерти в 1520 году Рафаэля учитель завершил не законченные его великим учеником фрески в церкви Перуджи. Перуджино умер от чумы в Перудже в 1524 году.</p>
+              </div>
+              <div class="catalog__tabs-item-left" data-target="10">
+                <picture>
+                  <img class="catalog__tabs-painter-img" src="/img/catalog/content/giovanni-antonio-boltraffio.jpeg" alt="Больтраффио, Джованни">
+                </picture>
+                <p class="catalog__tabs-painter-title">Больтраффио, Джованни</p>
+                <p class="catalog__tabs-painter-subtitle">1466(1467) — 1516</p>
+                <p class="catalog__tabs-painter-description">Джованни Антонио Больтраффио (Бельтраффио) (итал. Giovanni Antonio Boltraffio (Bеltraffio); 1466 или 1467, Милан — 1516, там же) — итальянский художник Высокого Возрождения. Вазари сообщает, что художник происходил из аристократической семьи. Воспитанный в традициях Фоппы, Бернардо Дзенале и Амброджо Бергоньоне, он прошёл обучение в мастерской Леонардо. Его первое произведение «Воскресение Христа, святой Леонард и святая Лючия» выполнено в 1491 году совместно с Марко д'Оджоно для миланской церкви Сан-Джованни-сул-Муро. Был придворным художником Лодовико Моро и славился своими психологическими портретами. Больтраффио умер в возрасте 49 лет и был похоронен на кладбище церкви Св. Паулы в Комито. Историки искусства предполагают, что фигура Младенца на картине Леонардо да Винчи «Мадонна Литта» принадлежит кисти Джованни Антонио Больтраффио. Известны подготовительные рисунки Больтраффио, в точности воспроизводящие эту фигуру.</p>
+              </div>
+              <div class="catalog__tabs-item-left" data-target="11">
+                <picture>
+                  <img class="catalog__tabs-painter-img" src="/img/catalog/content/benozzo-gozzoli.jpeg" alt="Беноццо Гоццоли">
+                </picture>
+                <p class="catalog__tabs-painter-title">Беноццо Гоццоли</p>
+                <p class="catalog__tabs-painter-subtitle">1420 — 4 октября 1497</p>
+                <p class="catalog__tabs-painter-description">Бено́ццо Го́ццоли (итал. Benozzo Gozzoli; настоящее имя Беноццо ди Лезе ди Сандро (итал. Benozzo di Lese di Sandro); 1420. Флоренция — 1497, Пистоя) — итальянский художник, автор многочисленных циклов фресок, представитель флорентийской школы живописи. Беноццо Гоццоли родился в 1420 году во Флоренции, в семье портного. Настоящее имя художника — Беноццо ди Лезе ди Сандро (фамилия Гоццоли впервые появляется лишь во втором издании «Жизнеописаний» Вазари). Самостоятельная творческая деятельность Беноццо Гоццоли началась в 1767-е годы. Он известен в основном как автор многочисленных фресок, из которых самая знаменитая — роспись Капеллы волхвов в Палаццо Медичи-Риккарди во Флоренции. Эта фреска изображает шествие волхвов и представляет собой единую композицию, занимающую три стены небольшой капеллы. Фреска изобилует тщательно выписанными деталями: волхвы с многочисленной свитой, всадники в роскошных одеждах, деревья, животные, птицы, замки, монастыри, рощи, скалы и т. д. Несмотря на определённую идеализацию образов, в участниках шествия принято видеть изображения реальных исторических лиц, в том числе членов семьи Медичи. На картине художник изобразил и самого себя: это человек в красной шапке с надписью Opus Benotii, устремивший пристальный взгляд на зрителя. Эта работа с её утончённой декоративностью и праздничным богатством красок стоит особняком в творчестве художника. В остальных своих произведениях он придерживался позднеготических традиций.</p>
+              </div>
+              <div class="catalog__tabs-item-left" data-target="12">
+                <picture>
+                  <img class="catalog__tabs-painter-img" src="/img/catalog/content/baldassare-tommaso-peruzzi.jpeg" alt="Перуцци, Бальдассаре">
+                </picture>
+                <p class="catalog__tabs-painter-title">Перуцци, Бальдассаре</p>
+                <p class="catalog__tabs-painter-subtitle">	7 марта 1481 — 	6 января 1536(1537)</p>
+                <p class="catalog__tabs-painter-description">Бальдассаре Томмазо Перуцци (итал. Baldassare Tommaso Peruzzi; 15 января 1481, Сиена — 6 января 1536, Рим) — итальянский архитектор и живописец эпохи Высокого Возрождения и раннего маньеризма. Перуцци увлекался античной археологией, математикой, астрономией, геометрией и перспективой. Он был подлинным человеком возрождения, но в своём индивидуальном стиле причудливо соединял нормы римского классицизма, созданные Браманте и Рафаэлем, с элементами маньеризма, нарождающегося барокко и родными ему готическими архаизмами сиенской школы живописи. В этом он типичный маньерист. В его архитектурных работах маньеризм проявился, по тонкому наблюдению Б. Р. Виппера, в необычно изогнутом фасаде, аритмично расставленных колоннах и пропорциях оконных проёмов Палаццо Массимо-алле-Колонне. В его живописных работах привлекает необычная экспрессия, типично маньеристичная изощрённость заполнения фигурами всего изобразительного пространства. Кисти Перуцци принадлежат фрески в Санта-Мария-делла-Паче, Палаццо Мадама, римских церквах Сант-Онофрио-аль-Джаниколо, Сан-Пьетро-ин-Монторио и Сан-Рокко, росписи в Капелле Сан Джованни (Святого Иоанна Крестителя) в Соборе Сиены. С точки зрения иконографии музыкальных инструментов интересен полиптих Перуцци «Четыре музыкальных бога», на котором изображены Пан, Амфион, Мусей и Марсий (выставлен в Лувре). Рисунок Перуцци «Андрокл и лев», созданный по мотивам сказаний о рабе Андрокле, находится в собрании Государственного Эрмитажа в Санкт-Петербурге.</p>
+              </div>
+              <div class="catalog__tabs-item-left" data-target="13">
+                <picture>
+                  <img class="catalog__tabs-painter-img" src="/img/catalog/content/francesco-bonsignori.jpeg" alt="Бонсиньори, Франческо">
+                </picture>
+                <p class="catalog__tabs-painter-title">Бонсиньори, Франческо</p>
+                <p class="catalog__tabs-painter-subtitle">1460 — 2 июля 1519</p>
+                <p class="catalog__tabs-painter-description">Франческо Бонсиньори (итал. Francesco Bonsignori; ок. 1460, Верона, Венецианская республика — 2 июля 1519, Кальдьеро, Венецианская республика) — итальянский живописец, писавший картины в стиле Ренессанса. Бонсиньори был превосходным портретистом. Уже в ранних картинах этого жанра, таких, как «Портрет сенатора» из Национальной галереи, заметен индивидуальный почерк художника. Он оставил после себя многочисленные портреты современников, включая портрет римского папы Льва X 1514 года. Бонсиньори умер в Кальдьеро близ Вероны 12 июля 1519 года, во время лечения в термах Юноны.</p>
+              </div>
+              <div class="catalog__tabs-item-left" data-target="14">
+                <picture>
+                  <img class="catalog__tabs-painter-img" src="/img/catalog/content/francesco-granacci.jpeg" alt="Граначчи, Франческо">
+                </picture>
+                <p class="catalog__tabs-painter-title">Граначчи, Франческо</p>
+                <p class="catalog__tabs-painter-subtitle">23 июля 1469 — 30 ноября 1543</p>
+                <p class="catalog__tabs-painter-description">Франческо Граначчи (итал. Francesco Granacci; 23 июля 1469, Флоренция — 30 ноября 1543, там же) — итальянский художник. Франческо Граначчи учился в мастерской Доменико Гирландайо и помогал ему в написании его картин, используя вместо темперы масляные краски. По заказу Лоренцо Медичи Граначчи участвовал в росписи флорентийского Сан-Марко. Позднее он работал с Леонардо да Винчи, Микеланджело и Рафаэлем. В 1508 году Граначчи переехал в Рим, где вместе с другими художниками помогал Микеланджело в росписи Сикстинской капеллы. На стиль Граначчи оказали влияние Филиппино Липпи и Фра Бартоломео. Граначчи упоминается в «Жизнеописаниях художников» Джорджо Вазари. Также упоминается в романе о Микеланджело Ирвинга Стоуна «Муки и радости».</p>
+              </div>
+              <div class="catalog__tabs-item-left" data-target="15">
+                <picture>
+                  <img class="catalog__tabs-painter-img" src="/img/catalog/content/pesellino.jpg" alt="Пизанелло">
+                </picture>
+                <p class="catalog__tabs-painter-title">Пизанелло</p>
+                <p class="catalog__tabs-painter-subtitle">1395 — 1455</p>
+                <p class="catalog__tabs-painter-description">Анто́нио ди Пу́ччо Пиза́но, или Анто́нио Пизане́лло (итал. Antonio di Puccio Pisano, Antonio Pisanello; ок. 1392—1395, Пиза — вероятно, 1455, Рим) — один из наиболее выдающихся художников эпохи Возрождения и раннего итальянского кватроченто. Судьба Пизанелло-художника при жизни сложилась удачно: он пользовался огромной популярностью, работал почти для всех правителей Италии, его творчеству посвятил поэму Гуарино да Верона. Но в середине XV века вместе с ростом интереса к классике и распространением гуманистических идей мода на позднеготический романтизм Пизанелло прошла. Из фресок, созданных Пизанелло, сохранились лишь две. Одна в Вероне в церкви Санта Анастасия. Вторая — незавершённая роспись так называемого «Зала Пизанелло» (одного из залов Палаццо Капитано в Мантуанском дворцовом корпусе) на тему средневековых легенд о короле Артуре и его рыцарях. Авторство Пизанелло было определено лишь в середине 1960-х годов. Самое же значительное произведение художника, созданное в 1420-х годах и дошедшее до нашего времени, — живописная часть надгробия Никколо Бренцони в церкви Сан-Фермо-Маджоре в Вероне. Большая часть станковой живописи Пизанелло утрачена. Из ранних его работ только относительно «Мадонны с куропаткой» авторство Пизанелло установлено точно. С «феррарским периодом» творчества художника связаны самые ранние из известных сегодня ренессансных портретов — «Портрет Лионелло д’Эсте» и «Портрет принцессы из дома д’Эсте». К медальерному искусству Пизанелло обратился уже будучи зрелым художником. Первая медаль авторства Пизанелло (изображение Иоанна VIII Палеолога) датируется 1438 годом. Этот год считается годом рождения ренессансного медальерного искусства. Популярность его объясняется возросшим в то время интересом к античной культуре. Многие высокопоставленные особы коллекционировали древние медали и геммы.</p>
+              </div>
+              <div class="catalog__tabs-item-left" data-target="16">
+                <picture>
+                  <img class="catalog__tabs-painter-img" src="/img/catalog/content/botticini-raffaello.jpeg" alt="Боттичини, Рафаэлло">
+                </picture>
+                <p class="catalog__tabs-painter-title">Боттичини, Рафаэлло</p>
+                <p class="catalog__tabs-painter-subtitle">11 сентября 1477 — неизвестно</p>
+                <p class="catalog__tabs-painter-description">Рафаэль Боттичини (итал. Raffaello di Francesco Botticini; 11 сентября 1477, Флоренция — известен до 1520 года) — итальянский художник. Рафаэлло принадлежал к флорентийской артистической династии — его дед, Джованни ди Доменико, был известен как художник, расписывавший игральные карты (хотя учёные не исключают, что он мог заниматься и более серьёзной живописью); его отец — Франческо ди Джованни, был известным флорентийским мастером. Первые художественные навыки Рафаэлло получил в мастерской отца; с этой мастерской связан и ранний период его творчества. В 1490-е годы, когда формировался художественный вкус Рафаэлло, мастерская его отца занималась в основном исполнением заказов в провинциальных городках в окрестностях Флоренции. В 1498 году Франческо Боттичини скончался, Рафаэлло унаследовал мастерскую и продолжил работать в провинции. По мнению исследователей его творчества, это был художник скромного дарования, никогда не стремившийся завоевать высоких позиций в интеллектуальном и финансовом центре Тосканы — Флоренции, и довольствовавшийся заказами, которые ему давали провинциальные храмы. Его искусство было эклектичным, и наряду с влиянием отца включало связь с искусством Перуджино, Ридольфо Гирландайо, Лоренцо ди Креди, Фра Бартоломео и др.</p>
+              </div>
+              <div class="catalog__tabs-item-left" data-target="17">
+                <picture>
+                  <img class="catalog__tabs-painter-img" src="/img/catalog/content/gregorio-di-cecco.jpg" alt="Грегорио ди Чекко">
+                </picture>
+                <p class="catalog__tabs-painter-title">Грегорио ди Чекко</p>
+                <p class="catalog__tabs-painter-subtitle">	1390-е — 	1 июля 1424</p>
+                <p class="catalog__tabs-painter-description">Грегорио ди Чекко (итал. Gregorio di Cecco; известен с 1418 г. по 1424 г.) — итальянский художник, сиенская школа. О Грегорио очень мало сведений. Известно, что он был приёмным сыном и учеником Таддео ди Бартоло, работал в его мастерской, а единственным достоверным произведением является алтарь, написанный им в 1423 году для капеллы Франческо Толомеи в сиенском соборе, на котором стоит его подпись. В начале XX века его путали с упоминаемым в документах Джорджо ди Кеко ди Лука (Giorgio di Checo di Lucha), поскольку Миланези в 1853 году неправильно транскрибировал имя Грегорио. Впервые его имя упоминается в 1418 году, когда художник получил 4 лиры за роспись таволетта — книжной обложки для отчётов Биккерны, финансового ведомства Сиены (обложка не сохранилась). В 1420 году совместно с Таддео ди Бартоло, он работал над алтарем для капеллы Марескотти в сиенской церкви Сан Агостино. На алтаре стояла его подпись, однако сама произведение до нашего времени не дошло. Известно, что этот алтарь состоял из статуи Мадонны дель Магнификат, созданной скульптором Джованни ди Турино (сохранилась), и картин, написанных Грегорио ди Чекко. В том же 1420 году Грегорио написал фреску в церкви деи Серви кон ле Аниме и «Мадонну с младенцем» для алтаря в церкви Санта Кьяра.</p>
+              </div>
+              <div class="catalog__tabs-item-left" data-target="18">
+                <picture>
+                  <img class="catalog__tabs-painter-img" src="/img/catalog/content/pintoricchio.jpeg" alt="Пинтуриккьо">
+                </picture>
+                <p class="catalog__tabs-painter-title">Пинтуриккьо</p>
+                <p class="catalog__tabs-painter-subtitle">1452 — 11 декабря 1513</p>
+                <p class="catalog__tabs-painter-description">Пинтури́ккьо (вариант написания — Пинтури́ккио; итал. Pinturicchio; собственно Бернардино ди Бетто (или ди Бенедетто) ди Бьяджо, Bernardino di Betto di Biagio, 1454, Перуджа — 11 декабря 1513, Сиена) — итальянский живописец эпохи Возрождения. Представитель умбрийской школы кватроченто. Учился у Фьоренцо ди Лоренцо, вместе с Рафаэлем — у Перуджино, которому помогал при создании фресок Сикстинской капеллы Ватикана (1481—1482), а по некоторым данным — ещё и у Бенедетто Капорали, создателя дворца кардинала Пассерини, впоследствии расписанного Синьорелли. Вероятно, испытал влияние и Бенедетто Бонфильи, учителя Перуджино. Став зрелым мастером, Пинтуриккьо отказался от некоторых принципов Перуджино — однообразности и степенности фигур, единства времени и места, — что сближает его скорее с Боттичелли. Работал во многих городах Италии — Перудже, Риме, Орвието, Сполето, Сиене. Наиболее известные росписи — в церкви Санта-Мария-дель-Пополо, Санта-Мария-ин-Арачели и Апартаментах Борджиа в Риме, и в Сиенском соборе (библиотека Пикколомини). На фресках работах этого художника часто появляются «гротески» (элементы растительного и архитектурного орнамента). Из станковых полотен примечателен «Портрет мальчика», хранящийся в Дрезденской галерее старых мастеров.</p>
+              </div>
+              <div class="catalog__tabs-item-left" data-target="19">
+                <picture>
+                  <img class="catalog__tabs-painter-img" src="/img/catalog/content/bartolommeo.jpg" alt="Брамантино">
+                </picture>
+                <p class="catalog__tabs-painter-title">Брамантино</p>
+                <p class="catalog__tabs-painter-subtitle">1465 — 1200</p>
+                <p class="catalog__tabs-painter-description">Брамантино, наст. имя Бартоломео Суарди (итал. Bartolommeo Suardi; Милан или Бергамо, ок. 1465 — 1200) — итальянский художник и архитектор. Бартоломео Суарди родился около 1465 года в Милане (по другой версии — в Бергамо). В Милане, где «царил» Леонардо, Брамантино создал яркий, острый стиль, хотя и страдавший иногда недостатками в передаче перспективы и неточностью изображения архитектурных элементов. Брамантино сформировался под влиянием Бутиноне и графического стиля Падуи и Феррары. Впоследствии он многому научился у Браманте, у которого долгое время состоял помощником (чем и объясняется его прозвище Брамантино — букв. «Маленький Браманте») и у которого перенял любовь к монументальным формам и драматизму. Некоторые искусствоведы полагают, что Браманте поручал Брамантино, как живописцу, осуществление своих замыслов. В зрелый период своего творчества, когда были выполнены шпалеры для созданного им мавзолея Тривульцио, художник придерживался строгой композиционной уравновешенности. Переехав в Рим в 1508 году, где он расписывал лоджии в Ватикане, Брамантино начал работать в новой манере, близкой к маньеристскому стилю. Брамантино умер в 1200 году.</p>
+              </div>
+              <div class="catalog__tabs-item-left" data-target="20">
+                <picture>
+                  <img class="catalog__tabs-painter-img" src="/img/catalog/content/giovanni-da-udine.jpeg" alt="Джованни да Удине">
+                </picture>
+                <p class="catalog__tabs-painter-title">Джованни да Удине</p>
+                <p class="catalog__tabs-painter-subtitle">15 октября 1487 — 1564</p>
+                <p class="catalog__tabs-painter-description">Джованни да Удине (итал. Giovanni da Udine), также Джованни Нанни (Giovanni Nani / Nanni; 1487, Удине — 1561, Рим) — итальянский живописец, архитектор и декоратор. Учился сначала у Джованни Мартино (итал. Pellegrino da San Daniele) в Удине, затем переехал в Венецию, где стал учеником Джорджоне. В 1514 году переехал в Рим, где поступил в мастерскую Рафаэля и считался одним из наиболее талантливых его учеников. Джорджо Вазари отмечал его стремление к гротеску и большую любовь к изображению природы — как растений и животных, так и неодушевлённых предметов. После смерти Рафаэля работал на кардинала Джулио Медичи (будущего папу Климента VII) по украшению Вилла Мадама, завершив работу к 1525 году; находился в конфликте с Джулио Романо. С 1521 по 1522 год работал во Флоренции, затем вернулся в Рим, в 1527 году покинул его, вернувшись в Удине, где стал архитектором и участвовал в восстановлении местного замка (итал. Castello di Udine), разрушенного сильным землетрясением 1511 года. В 1532 году ненадолго ездил во Флоренцию. В 1547 году создал лестницу с внешнего двора в этом замке. В 1560 году вернулся в Рим и остаток жизни провёл в бедности. Был похоронен в Пантеоне, рядом с Рафаэлем. Помогал Рафаэлю в расписывании лож ватиканского дворца и в других подобных работах. Им написаны и отчасти придуманы орнаменты в верхних ложах. В нижних ложах ему принадлежит плафонная живопись, реставрированная в 1867 году Мантовани. На вилле Фарнезина им исполнены фестоны, обрамляющие рафаэлевскую «Историю Психеи». Для папы Климента VII в сотрудничестве с Перино дель-Вага украсил живописью Торре-ди-Борджиа. Из прочих его произведений известны роспись вестибюля в вилле-Мадама, лепные украшения нижних сеней этого здания, декоративная живопись в палаццо Массими-алле-Колонне в Риме, работы в усыпальнице Медичи (в церкви Сан-Лоренцо) и рисунки, по которым изготовлены расписные стёкла в Лаврентьевской библиотеке во Флоренции.</p>
+              </div>
+              <div class="catalog__tabs-item-left" data-target="21">
+                <picture>
+                  <img class="catalog__tabs-painter-img" src="/img/catalog/content/ludovico-brea.jpeg" alt="Бреа, Людовико">
+                </picture>
+                <p class="catalog__tabs-painter-title">Бреа, Людовико</p>
+                <p class="catalog__tabs-painter-subtitle">1767 — 1523</p>
+                <p class="catalog__tabs-painter-description">Людовико (Луи) Бреа (итал. Ludovico Brea, фр. Louis Brea; 1767, Ницца, Сардинское королевство — 1523)  — ренессансный художник французского происхождения, работы которого в основном сосредоточены в прибрежных городах современных Лигурии (Италия) и восточной части Приморских Альп (Франция). Бреа родился в происходившей из Монтальто-Лигуре семье бондарей в Ницце, являвшейся в то время частью Генуэзской республики. Бреа был в основном клерикальным художником, и наиболее значительные его работы представляют собой алтарные картины. Первая значимая работа художника представляет собой роспись францисканского монастыря в Симье (современная Ницца). Прочие работы художника сосредоточены прибрежных поселениях между Монако и Ментоной, между Таджей и Империей и между Савоной и Генуей. Одним из учеников Людовико Бреа был Террамо Пьяджо.</p>
+              </div>
+              <div class="catalog__tabs-item-left" data-target="22">
+                <picture>
+                  <img class="catalog__tabs-painter-img" src="/img/catalog/content/giovanni-di-paolo.jpeg" alt="Джованни ди Паоло">
+                </picture>
+                <p class="catalog__tabs-painter-title">Джованни ди Паоло</p>
+                <p class="catalog__tabs-painter-subtitle">1403 - 1482</p>
+                <p class="catalog__tabs-painter-description">Джованни ди Паоло (итал. Giovanni di Paolo di Grazia; ок. 1403—1482, Сиена) — итальянский художник эпохи кватроченто, один из самых значительных последователей сиенской школы живописи. Его произведениям присущи повышенная экспрессия, вплоть до экзальтации, и причудливая фантазия. Причудливая фантазия и поразительная экспрессия произведений Джованни отражают необычный взгляд на мир, который был присущ этому мастеру. Не случайно в начале XX века особый интерес к нему проявляли художники — экспрессионисты и сюрреалисты. Мир сказочного сна, или готической грёзы, созданный Джованни, был равнодушен к суете флорентийских художественных новаций. Новшества, привнесённые в XV веке в сиенскую живопись, в частности, Сассеттой, оказали на произведения Джованни ди Паоло лишь формальное воздействие. Например, в сценах пределлы «Полиптиха Фонди» (1436 г. «Распятие», «Введение во храм», «Бегство в Египет» — Сиена, Пинакотека; «Поклонение волхвов» — Оттерло, музей Крёллер-Мюллер) мотивы, будто бы заимствованные у Сассетты, трансформированы в ирреальные, готические мотивы, с пейзажами, напоминающими фрески Амброджо Лоренцетти. Паоло ди Джованни был современником Веккьетты и Пьетро ди Джованни д'Амброджио, видел их живопись, что-то у них заимствовал, но переводил все заимствования на какой-то архаический язык. Он написал несколько вариантов «Распятия»(1440 г. Сиена, Пинакотека; 1440 г. ц. Сан Пьетро Овиле; Дублин, Нац.галерея) и несколько сцен из жизни Иоанна Крестителя (Чикаго, Художественный институт; Нью-Йорк, музей Метрополитен; Мюнстер, музей; Авиньон, Пти Пале; Пасадина, Музей Нортона Саймона), в которых ощущается дух древнего аскетизма. Джованни ди Паоло создал множество разных станковых произведений, в основном это были полиптихи. Он также занимался книжной миниатюрой, известны и написанные им для сиенской Биккерны таволетта. Особо следует отметить такие его работы, как «Христос в Гефсиманском саду» (до 1440 г. Ватикан, Пинакотека), «Мадонна умиление» (Сиена, Пинакотека; Бостон, Музей изящных искусств); «Рай» и «Изгнание из рая» (Нью-Йорк, музей Метрополитен), «Полиптих» (1445 г.,Флоренция, Уффици), алтарный образ «Св. Николай» (1453 г. Сиена, Пинакотека), «Св. Иероним» (Сиена, Музей собора). Поздние работы художника, например «Полиптих Сан Сильвестро» (1475 г., Сиена, Пинакотека) гораздо менее интересны, чем произведения периода его расцвета — 1440-50х годов. Джованни ди Паоло был уникальным мастером, у которого практически не было последователей. В какой-то мере на эту роль может претендовать Пеллегрино ди Марьяно.</p>
+              </div>
+              <div class="catalog__tabs-item-left" data-target="23">
+                <picture>
+                  <img class="catalog__tabs-painter-img" src="/img/catalog/content/biagio-d'antonio.jpeg" alt="Бьяджо д’Антонио Туччи">
+                </picture>
+                <p class="catalog__tabs-painter-title">Бьяджо д’Антонио Туччи</p>
+                <p class="catalog__tabs-painter-subtitle">1445 - 1510</p>
+                <p class="catalog__tabs-painter-description">Бьяджо д’Антонио Туччи (итал. Biagio di Antonio Tucci; 1446, Флоренция — 1 июня 1516, там же) — итальянский художник эпохи Возрождения. Его творчество было вдохновлено работами Филиппо Липпи, Андреа Верроккьо, Доменико Гирландайо. Родился во Флоренции. Последнюю четверть XV века работал в Фаэнце, но в его стиле мало элементов флорентийского стиля — прослеживается влияние ранней нидерландскрй живописи.</p>
+              </div>
+              <div class="catalog__tabs-item-left" data-target="24">
+                <picture>
+                  <img class="catalog__tabs-painter-img" src="/img/catalog/content/giorgione.jpeg" alt="Джорджоне">
+                </picture>
+                <p class="catalog__tabs-painter-title">Джорджоне</p>
+                <p class="catalog__tabs-painter-subtitle">1477(1478) - 1510</p>
+                <p class="catalog__tabs-painter-description">Джорджо Барбарелли да Кастельфранко, более известный как Джорджоне (итал. Giorgio Barbarelli da Castelfranco, Giorgione; 1477/1478—1510) — итальянский художник, представитель венецианской школы живописи; один из величайших мастеров Высокого Возрождения. Уже в ранних произведениях, выполненных до 1505 («Поклонение пастухов», Национальная галерея искусства, Вашингтон; «Мадонна со св. Франциском и Либералием», собор в Кастельфранко; «Юдифь»), проявляется главная особенность искусства Джорджоне — поэтическое представление о богатстве таящихся в мире и человеке жизненных сил, присутствие которых раскрывается не в действии, а в состоянии всеобщей молчаливой одухотворённости. «Мадонна Кастельфранко» — это самая большая по размеру (200 х 152 см) и единственная работа Джорджоне, написанная им для церкви. Уже в ранних работах видно, что Джорджоне большое внимание уделял пейзажу, который не просто являлся фоном для фигур на переднем плане, а играл важную роль в передаче глубины пространства и создании впечатления от картины. В «Читающей Мадонне» пейзаж содержит легко узнаваемые здания Венеции. Ощущение скрытого дыхания жизни в природе и людях, органичность воссоздания натуры соединяются в зрелых произведениях Джорджоне 1506—1510-х гг. с благородной идеализацией, утончённостью эмоциональной атмосферы, а также со сложным, ассоциативным характером идейно-сюжетного замысла, что придаёт его работам черты недосказанности («Буря», Галерея Академии, Венеция; «Три философа», Художественно-исторический музей, Вена). Общая направленность творчества Джорджоне определила интимно-лирическую эмоциональную окраску выполненных им портретов [портрет юноши, Картинная галерея, Берлин-Далем; женский портрет (так называемая «Лаура»), Художественно-исторический музей, Вена; портрет А. Броккардо, Музей изобразительных искусств, Будапешт], а также его интерес к самостоятельной выразительности природы, подготовивший формирование нового живописного жанра — пейзажа.</p>
+              </div>             
+              <div class="catalog__tabs-item-right">
+                <div class="catalog__tabs-accordion" id="catalog__tabs-accordion-3">
+                  <div class="catalog__tabs-accordion-item">
+                    <h3 class="catalog__tabs-accordion-item-title">
+                      <span class="catalog__tabs-accordion-item-title-text">C 1400 по 1499 гг.</span>
+                      <button class="catalog__tabs-accordion-item-switch">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/><path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/></svg>
+                      </button>
+                    </h3>
+                    <div class="catalog__tabs-accordion-item-content">
+                      <ul class="catalog__tabs-painters-list">
+                        <li class="catalog__tabs-painters-list-item"><a href="#" class="catalog__tabs-painters-list-item-link" data-tab="1" aria-label="Бенедетто ди Биндо">Бенедетто ди Биндо</a></li>
+                        <li class="catalog__tabs-painters-list-item"><a href="#" class="catalog__tabs-painters-list-item-link" data-tab="4" aria-label="Бергоньоне, Амброджо">Бергоньоне, Амброджо</a></li>
+                        <li class="catalog__tabs-painters-list-item"><a href="#" class="catalog__tabs-painters-list-item-link" data-tab="7" aria-label="Биссоло, Франческо">Биссоло, Франческо</a></li>
+                        <li class="catalog__tabs-painters-list-item"><a href="#" class="catalog__tabs-painters-list-item-link" data-tab="10" aria-label="Больтраффио, Джованни">Больтраффио, Джованни</a></li>
+                        <li class="catalog__tabs-painters-list-item"><a href="#" class="catalog__tabs-painters-list-item-link" data-tab="13" aria-label="Бонсиньори, Франческо">Бонсиньори, Франческо</a></li>
+                        <li class="catalog__tabs-painters-list-item"><a href="#" class="catalog__tabs-painters-list-item-link" data-tab="16" aria-label="Боттичини, Рафаэлло">Боттичини, Рафаэлло</a></li>
+                        <li class="catalog__tabs-painters-list-item"><a href="#" class="catalog__tabs-painters-list-item-link" data-tab="19" aria-label="Брамантино">Брамантино</a></li>
+                        <li class="catalog__tabs-painters-list-item"><a href="#" class="catalog__tabs-painters-list-item-link" data-tab="21" aria-label="Бреа, Людовико">Бреа, Людовико</a></li>
+                        <li class="catalog__tabs-painters-list-item"><a href="#" class="catalog__tabs-painters-list-item-link" data-tab="23" aria-label="Бьяджо д’Антонио Туччи">Бьяджо д’Антонио Туччи</a></li>
+                        <li class="catalog__tabs-painters-list-item"><a href="#" class="catalog__tabs-painters-list-item-link" data-tab="2" aria-label="Веккьетта">Веккьетта</a></li>
+                        <li class="catalog__tabs-painters-list-item"><a href="#" class="catalog__tabs-painters-list-item-link" data-tab="5" aria-label="Андреа Верроккьо">Андреа Верроккьо</a></li>
+                        <li class="catalog__tabs-painters-list-item"><a href="#" class="catalog__tabs-painters-list-item-link" data-tab="8" aria-label="Доменико Гирландайо">Доменико Гирландайо</a></li>
+                        <li class="catalog__tabs-painters-list-item"><a href="#" class="catalog__tabs-painters-list-item-link" data-tab="11" aria-label="Беноццо Гоццоли">Беноццо Гоццоли</a></li>
+                        <li class="catalog__tabs-painters-list-item"><a href="#" class="catalog__tabs-painters-list-item-link" data-tab="14" aria-label="Граначчи, Франческо">Граначчи, Франческо</a></li>
+                        <li class="catalog__tabs-painters-list-item"><a href="#" class="catalog__tabs-painters-list-item-link" data-tab="17" aria-label="Грегорио ди Чекко">Грегорио ди Чекко</a></li>
+                        <li class="catalog__tabs-painters-list-item"><a href="#" class="catalog__tabs-painters-list-item-link" data-tab="20" aria-label="Джованни да Удине">Джованни да Удине</a></li>
+                        <li class="catalog__tabs-painters-list-item"><a href="#" class="catalog__tabs-painters-list-item-link" data-tab="22" aria-label="Джованни ди Паоло">Джованни ди Паоло</a></li>
+                        <li class="catalog__tabs-painters-list-item"><a href="#" class="catalog__tabs-painters-list-item-link" data-tab="24" aria-label="Джорджоне">Джорджоне</a></li>
+                        <li class="catalog__tabs-painters-list-item"><a href="#" class="catalog__tabs-painters-list-item-link" data-tab="3" aria-label="Парентино, Бернардо">Парентино, Бернардо</a></li>
+                        <li class="catalog__tabs-painters-list-item"><a href="#" class="catalog__tabs-painters-list-item-link" data-tab="6" aria-label="Пезеллино">Пезеллино</a></li>
+                        <li class="catalog__tabs-painters-list-item"><a href="#" class="catalog__tabs-painters-list-item-link" data-tab="9" aria-label="Пьетро Перуджино">Пьетро Перуджино</a></li>
+                        <li class="catalog__tabs-painters-list-item"><a href="#" class="catalog__tabs-painters-list-item-link" data-tab="12" aria-label="Перуцци, Бальдассаре">Перуцци, Бальдассаре</a></li>
+                        <li class="catalog__tabs-painters-list-item"><a href="#" class="catalog__tabs-painters-list-item-link" data-tab="15" aria-label="Пизанелло">Пизанелло</a></li>
+                        <li class="catalog__tabs-painters-list-item"><a href="#" class="catalog__tabs-painters-list-item-link" data-tab="18" aria-label="Пинтуриккьо">Пинтуриккьо</a></li>
+                      </ul>
+                    </div>
+                  </div>      
+                  <div class="catalog__tabs-accordion-item">
+                    <h3 class="catalog__tabs-accordion-item-title">
+                      <span class="catalog__tabs-accordion-item-title-text">C 1500 по 1599 гг.</span>
+                      <button class="catalog__tabs-accordion-item-switch">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/><path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/></svg>
+                      </button>
+                    </h3>
+                    <div class="catalog__tabs-accordion-item-content">
+                      <div class="catalog__tabs-accordion-item-content">
+                        <div class="catalog__tabs-accordion-item-inner-with-img">
+                          <img class="catalog__tabs-accordion-item-img" src="/img/catalog/Rectangle.png" alt="Заглушка">
+                          <div class="catalog__tabs-accordion-item-inner-with-img-text-box">
+                            <p class="catalog__tabs-accordion-item-content-title">C'est vide ici pour l'instant</p>
+                            <p class="catalog__tabs-accordion-item-content-text">Et dans la galerie, vous pouvez toujours trouver quelque chose d'intéressant pour vous-même</p>
+                            <a href="#gallery" class="catalog__tabs-accordion-item-content-link">Vers la galerie</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>   
+                  <div class="catalog__tabs-accordion-item">
+                    <h3 class="catalog__tabs-accordion-item-title">
+                      <span class="catalog__tabs-accordion-item-title-text">C 1600 по 1699 гг.</span>
+                      <button class="catalog__tabs-accordion-item-switch">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/><path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/></svg>
+                      </button>
+                    </h3>
+                    <div class="catalog__tabs-accordion-item-content">
+                      <div class="catalog__tabs-accordion-item-content">
+                        <div class="catalog__tabs-accordion-item-inner-with-img">
+                          <img class="catalog__tabs-accordion-item-img" src="/img/catalog/Rectangle.png" alt="Заглушка">
+                          <div class="catalog__tabs-accordion-item-inner-with-img-text-box">
+                            <p class="catalog__tabs-accordion-item-content-title">C'est vide ici pour l'instant</p>
+                            <p class="catalog__tabs-accordion-item-content-text">Et dans la galerie, vous pouvez toujours trouver quelque chose d'intéressant pour vous-même</p>
+                            <a href="#gallery" class="catalog__tabs-accordion-item-content-link">Vers la galerie</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog__tabs-accordion-item">
+                    <h3 class="catalog__tabs-accordion-item-title">
+                      <span class="catalog__tabs-accordion-item-title-text">C 1700 по 1799 гг.</span>
+                      <button class="catalog__tabs-accordion-item-switch">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/><path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/></svg>
+                      </button>
+                    </h3>
+                    <div class="catalog__tabs-accordion-item-content">
+                      <div class="catalog__tabs-accordion-item-content">
+                        <div class="catalog__tabs-accordion-item-inner-with-img">
+                          <img class="catalog__tabs-accordion-item-img" src="/img/catalog/Rectangle.png" alt="Заглушка">
+                          <div class="catalog__tabs-accordion-item-inner-with-img-text-box">
+                            <p class="catalog__tabs-accordion-item-content-title">C'est vide ici pour l'instant</p>
+                            <p class="catalog__tabs-accordion-item-content-text">Et dans la galerie, vous pouvez toujours trouver quelque chose d'intéressant pour vous-même</p>
+                            <a href="#gallery" class="catalog__tabs-accordion-item-content-link">Vers la galerie</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog__tabs-accordion-item">
+                    <h3 class="catalog__tabs-accordion-item-title">
+                      <span class="catalog__tabs-accordion-item-title-text">C 1800 по 1899 гг.</span>
+                      <button class="catalog__tabs-accordion-item-switch">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/><path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/></svg>
+                      </button>
+                    </h3>
+                    <div class="catalog__tabs-accordion-item-content">
+                      <div class="catalog__tabs-accordion-item-content">
+                        <div class="catalog__tabs-accordion-item-inner-with-img">
+                          <img class="catalog__tabs-accordion-item-img" src="/img/catalog/Rectangle.png" alt="Заглушка">
+                          <div class="catalog__tabs-accordion-item-inner-with-img-text-box">
+                            <p class="catalog__tabs-accordion-item-content-title">C'est vide ici pour l'instant</p>
+                            <p class="catalog__tabs-accordion-item-content-text">Et dans la galerie, vous pouvez toujours trouver quelque chose d'intéressant pour vous-même</p>
+                            <a href="#gallery" class="catalog__tabs-accordion-item-content-link">Vers la galerie</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>   
+                  <div class="catalog__tabs-accordion-item">
+                    <h3 class="catalog__tabs-accordion-item-title">
+                      <span class="catalog__tabs-accordion-item-title-text">C 1900 по 1999 гг.</span>
+                      <button class="catalog__tabs-accordion-item-switch">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/><path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/></svg>
+                      </button>
+                    </h3>
+                    <div class="catalog__tabs-accordion-item-content">
+                      <div class="catalog__tabs-accordion-item-content">
+                        <div class="catalog__tabs-accordion-item-inner-with-img">
+                          <img class="catalog__tabs-accordion-item-img" src="/img/catalog/Rectangle.png" alt="Заглушка">
+                          <div class="catalog__tabs-accordion-item-inner-with-img-text-box">
+                            <p class="catalog__tabs-accordion-item-content-title">C'est vide ici pour l'instant</p>
+                            <p class="catalog__tabs-accordion-item-content-text">Et dans la galerie, vous pouvez toujours trouver quelque chose d'intéressant pour vous-même</p>
+                            <a href="#gallery" class="catalog__tabs-accordion-item-content-link">Vers la galerie</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>            
+                  <div class="catalog__tabs-accordion-item">
+                    <h3 class="catalog__tabs-accordion-item-title">
+                      <span class="catalog__tabs-accordion-item-title-text">C 2000 г.</span>
+                      <button class="catalog__tabs-accordion-item-switch">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/><path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/></svg>
+                      </button>
+                    </h3>
+                    <div class="catalog__tabs-accordion-item-content">
+                      <div class="catalog__tabs-accordion-item-content">
+                        <div class="catalog__tabs-accordion-item-inner-with-img">
+                          <img class="catalog__tabs-accordion-item-img" src="/img/catalog/Rectangle.png" alt="Заглушка">
+                          <div class="catalog__tabs-accordion-item-inner-with-img-text-box">
+                            <p class="catalog__tabs-accordion-item-content-title">C'est vide ici pour l'instant</p>
+                            <p class="catalog__tabs-accordion-item-content-text">Et dans la galerie, vous pouvez toujours trouver quelque chose d'intéressant pour vous-même</p>
+                            <a href="#gallery" class="catalog__tabs-accordion-item-content-link">Vers la galerie</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>         
+                </div>          
+              </div>
+            </div>
+          </div>
+          <div class="catalog__tabs-item" data-target="4">    
+            <p class="catalog__tabs-item-description">Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.</p>
+            <div class="catalog__tabs-item-content">
+              <div class="catalog__tabs-item-left catalog__tabs-item-left_active_true" data-target="8">
+                <picture>
+                  <source srcset="/img/catalog/smol1.png" media="(max-width:767px)">
+                  <source srcset="/img/catalog/Frame.jpg" media="(max-width:1020px)">
+                  <source srcset="/img/catalog/Frame.jpg" media="(max-width:1200px)">
+                  <img class="catalog__tabs-painter-img" src="/img/catalog/catalog.img.png" alt="Заглушка">
+                </picture>
+                <p class="catalog__tabs-painter-title">Что мы о нём знаем?</p>
+                <p class="catalog__tabs-painter-description">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+                <a href="#gallery" class="catalog__tabs-accordion-item-content-link">В галерею</a>
+              </div>
+              <div class="catalog__tabs-item-right">
+                <div class="catalog__tabs-accordion" id="catalog__tabs-accordion-4">
+                  <div class="catalog__tabs-accordion-item">
+                    <h3 class="catalog__tabs-accordion-item-title">
+                      <span class="catalog__tabs-accordion-item-title-text">C 1400 по 1499 гг.</span>
+                      <button class="catalog__tabs-accordion-item-switch">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/><path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/></svg>
+                      </button>
+                    </h3>
+                    <div class="catalog__tabs-accordion-item-content">
+                      <div class="catalog__tabs-accordion-item-content">
+                        <div class="catalog__tabs-accordion-item-inner-with-img">
+                          <img class="catalog__tabs-accordion-item-img" src="/img/catalog/Rectangle.png" alt="Заглушка">
+                          <div class="catalog__tabs-accordion-item-inner-with-img-text-box">
+                            <p class="catalog__tabs-accordion-item-content-title">C'est vide ici pour l'instant</p>
+                            <p class="catalog__tabs-accordion-item-content-text">Et dans la galerie, vous pouvez toujours trouver quelque chose d'intéressant pour vous-même</p>
+                            <a href="#gallery" class="catalog__tabs-accordion-item-content-link">Vers la galerie</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>      
+                  <div class="catalog__tabs-accordion-item">
+                    <h3 class="catalog__tabs-accordion-item-title">
+                      <span class="catalog__tabs-accordion-item-title-text">C 1500 по 1599 гг.</span>
+                      <button class="catalog__tabs-accordion-item-switch">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/><path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/></svg>
+                      </button>
+                    </h3>
+                    <div class="catalog__tabs-accordion-item-content">
+                      <div class="catalog__tabs-accordion-item-content">
+                        <div class="catalog__tabs-accordion-item-inner-with-img">
+                          <img class="catalog__tabs-accordion-item-img" src="/img/catalog/Rectangle.png" alt="Заглушка">
+                          <div class="catalog__tabs-accordion-item-inner-with-img-text-box">
+                            <p class="catalog__tabs-accordion-item-content-title">C'est vide ici pour l'instant</p>
+                            <p class="catalog__tabs-accordion-item-content-text">Et dans la galerie, vous pouvez toujours trouver quelque chose d'intéressant pour vous-même</p>
+                            <a href="#gallery" class="catalog__tabs-accordion-item-content-link">Vers la galerie</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>   
+                  <div class="catalog__tabs-accordion-item">
+                    <h3 class="catalog__tabs-accordion-item-title">
+                      <span class="catalog__tabs-accordion-item-title-text">C 1600 по 1699 гг.</span>
+                      <button class="catalog__tabs-accordion-item-switch">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/><path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/></svg>
+                      </button>
+                    </h3>
+                    <div class="catalog__tabs-accordion-item-content">
+                      <div class="catalog__tabs-accordion-item-content">
+                        <div class="catalog__tabs-accordion-item-inner-with-img">
+                          <img class="catalog__tabs-accordion-item-img" src="/img/catalog/Rectangle.png" alt="Заглушка">
+                          <div class="catalog__tabs-accordion-item-inner-with-img-text-box">
+                            <p class="catalog__tabs-accordion-item-content-title">C'est vide ici pour l'instant</p>
+                            <p class="catalog__tabs-accordion-item-content-text">Et dans la galerie, vous pouvez toujours trouver quelque chose d'intéressant pour vous-même</p>
+                            <a href="#gallery" class="catalog__tabs-accordion-item-content-link">Vers la galerie</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog__tabs-accordion-item">
+                    <h3 class="catalog__tabs-accordion-item-title">
+                      <span class="catalog__tabs-accordion-item-title-text">C 1700 по 1799 гг.</span>
+                      <button class="catalog__tabs-accordion-item-switch">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/><path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/></svg>
+                      </button>
+                    </h3>
+                    <div class="catalog__tabs-accordion-item-content">
+                      <div class="catalog__tabs-accordion-item-content">
+                        <div class="catalog__tabs-accordion-item-inner-with-img">
+                          <img class="catalog__tabs-accordion-item-img" src="/img/catalog/Rectangle.png" alt="Заглушка">
+                          <div class="catalog__tabs-accordion-item-inner-with-img-text-box">
+                            <p class="catalog__tabs-accordion-item-content-title">C'est vide ici pour l'instant</p>
+                            <p class="catalog__tabs-accordion-item-content-text">Et dans la galerie, vous pouvez toujours trouver quelque chose d'intéressant pour vous-même</p>
+                            <a href="#gallery" class="catalog__tabs-accordion-item-content-link">Vers la galerie</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog__tabs-accordion-item">
+                    <h3 class="catalog__tabs-accordion-item-title">
+                      <span class="catalog__tabs-accordion-item-title-text">C 1800 по 1899 гг.</span>
+                      <button class="catalog__tabs-accordion-item-switch">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/><path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/></svg>
+                      </button>
+                    </h3>
+                    <div class="catalog__tabs-accordion-item-content">
+                      <div class="catalog__tabs-accordion-item-content">
+                        <div class="catalog__tabs-accordion-item-inner-with-img">
+                          <img class="catalog__tabs-accordion-item-img" src="/img/catalog/Rectangle.png" alt="Заглушка">
+                          <div class="catalog__tabs-accordion-item-inner-with-img-text-box">
+                            <p class="catalog__tabs-accordion-item-content-title">C'est vide ici pour l'instant</p>
+                            <p class="catalog__tabs-accordion-item-content-text">Et dans la galerie, vous pouvez toujours trouver quelque chose d'intéressant pour vous-même</p>
+                            <a href="#gallery" class="catalog__tabs-accordion-item-content-link">Vers la galerie</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>   
+                  <div class="catalog__tabs-accordion-item">
+                    <h3 class="catalog__tabs-accordion-item-title">
+                      <span class="catalog__tabs-accordion-item-title-text">C 1900 по 1999 гг.</span>
+                      <button class="catalog__tabs-accordion-item-switch">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/><path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/></svg>
+                      </button>
+                    </h3>
+                    <div class="catalog__tabs-accordion-item-content">
+                      <div class="catalog__tabs-accordion-item-content">
+                        <div class="catalog__tabs-accordion-item-inner-with-img">
+                          <img class="catalog__tabs-accordion-item-img" src="/img/catalog/Rectangle.png" alt="Заглушка">
+                          <div class="catalog__tabs-accordion-item-inner-with-img-text-box">
+                            <p class="catalog__tabs-accordion-item-content-title">C'est vide ici pour l'instant</p>
+                            <p class="catalog__tabs-accordion-item-content-text">Et dans la galerie, vous pouvez toujours trouver quelque chose d'intéressant pour vous-même</p>
+                            <a href="#gallery" class="catalog__tabs-accordion-item-content-link">Vers la galerie</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>            
+                  <div class="catalog__tabs-accordion-item">
+                    <h3 class="catalog__tabs-accordion-item-title">
+                      <span class="catalog__tabs-accordion-item-title-text">C 2000 г.</span>
+                      <button class="catalog__tabs-accordion-item-switch">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/><path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/></svg>
+                      </button>
+                    </h3>
+                    <div class="catalog__tabs-accordion-item-content">
+                      <div class="catalog__tabs-accordion-item-content">
+                        <div class="catalog__tabs-accordion-item-inner-with-img">
+                          <img class="catalog__tabs-accordion-item-img" src="/img/catalog/Rectangle.png" alt="Заглушка">
+                          <div class="catalog__tabs-accordion-item-inner-with-img-text-box">
+                            <p class="catalog__tabs-accordion-item-content-title">C'est vide ici pour l'instant</p>
+                            <p class="catalog__tabs-accordion-item-content-text">Et dans la galerie, vous pouvez toujours trouver quelque chose d'intéressant pour vous-même</p>
+                            <a href="#gallery" class="catalog__tabs-accordion-item-content-link">Vers la galerie</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>         
+                </div>          
+              </div>
+            </div>
+          </div>
+          <div class="catalog__tabs-item" data-target="5">    
+            <p class="catalog__tabs-item-description">Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.</p>
+            <div class="catalog__tabs-item-content">
+              <div class="catalog__tabs-item-left catalog__tabs-item-left_active_true" data-target="8">
+                <picture>
+                  <source srcset="/img/catalog/smol1.png" media="(max-width:767px)">
+                  <source srcset="/img/catalog/Frame.jpg" media="(max-width:1020px)">
+                  <source srcset="/img/catalog/Frame.jpg" media="(max-width:1200px)">
+                  <img class="catalog__tabs-painter-img" src="/img/catalog/catalog.img.png" alt="Заглушка">
+                </picture>
+                <p class="catalog__tabs-painter-title">Что мы о нём знаем?</p>
+                <p class="catalog__tabs-painter-description">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+                <a href="#gallery" class="catalog__tabs-accordion-item-content-link">В галерею</a>
+              </div>
+              <div class="catalog__tabs-item-right">
+                <div class="catalog__tabs-accordion" id="catalog__tabs-accordion-5">
+                  <div class="catalog__tabs-accordion-item">
+                    <h3 class="catalog__tabs-accordion-item-title">
+                      <span class="catalog__tabs-accordion-item-title-text">C 1400 по 1499 гг.</span>
+                      <button class="catalog__tabs-accordion-item-switch">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/><path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/></svg>
+                      </button>
+                    </h3>
+                    <div class="catalog__tabs-accordion-item-content">
+                      <div class="catalog__tabs-accordion-item-content">
+                        <div class="catalog__tabs-accordion-item-inner-with-img">
+                          <img class="catalog__tabs-accordion-item-img" src="/img/catalog/Rectangle.png" alt="Заглушка">
+                          <div class="catalog__tabs-accordion-item-inner-with-img-text-box">
+                            <p class="catalog__tabs-accordion-item-content-title">C'est vide ici pour l'instant</p>
+                            <p class="catalog__tabs-accordion-item-content-text">Et dans la galerie, vous pouvez toujours trouver quelque chose d'intéressant pour vous-même</p>
+                            <a href="#gallery" class="catalog__tabs-accordion-item-content-link">Vers la galerie</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>      
+                  <div class="catalog__tabs-accordion-item">
+                    <h3 class="catalog__tabs-accordion-item-title">
+                      <span class="catalog__tabs-accordion-item-title-text">C 1500 по 1599 гг.</span>
+                      <button class="catalog__tabs-accordion-item-switch">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/><path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/></svg>
+                      </button>
+                    </h3>
+                    <div class="catalog__tabs-accordion-item-content">
+                      <div class="catalog__tabs-accordion-item-content">
+                        <div class="catalog__tabs-accordion-item-inner-with-img">
+                          <img class="catalog__tabs-accordion-item-img" src="/img/catalog/Rectangle.png" alt="Заглушка">
+                          <div class="catalog__tabs-accordion-item-inner-with-img-text-box">
+                            <p class="catalog__tabs-accordion-item-content-title">C'est vide ici pour l'instant</p>
+                            <p class="catalog__tabs-accordion-item-content-text">Et dans la galerie, vous pouvez toujours trouver quelque chose d'intéressant pour vous-même</p>
+                            <a href="#gallery" class="catalog__tabs-accordion-item-content-link">Vers la galerie</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>   
+                  <div class="catalog__tabs-accordion-item">
+                    <h3 class="catalog__tabs-accordion-item-title">
+                      <span class="catalog__tabs-accordion-item-title-text">C 1600 по 1699 гг.</span>
+                      <button class="catalog__tabs-accordion-item-switch">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/><path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/></svg>
+                      </button>
+                    </h3>
+                    <div class="catalog__tabs-accordion-item-content">
+                      <div class="catalog__tabs-accordion-item-content">
+                        <div class="catalog__tabs-accordion-item-inner-with-img">
+                          <img class="catalog__tabs-accordion-item-img" src="/img/catalog/Rectangle.png" alt="Заглушка">
+                          <div class="catalog__tabs-accordion-item-inner-with-img-text-box">
+                            <p class="catalog__tabs-accordion-item-content-title">C'est vide ici pour l'instant</p>
+                            <p class="catalog__tabs-accordion-item-content-text">Et dans la galerie, vous pouvez toujours trouver quelque chose d'intéressant pour vous-même</p>
+                            <a href="#gallery" class="catalog__tabs-accordion-item-content-link">Vers la galerie</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog__tabs-accordion-item">
+                    <h3 class="catalog__tabs-accordion-item-title">
+                      <span class="catalog__tabs-accordion-item-title-text">C 1700 по 1799 гг.</span>
+                      <button class="catalog__tabs-accordion-item-switch">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/><path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/></svg>
+                      </button>
+                    </h3>
+                    <div class="catalog__tabs-accordion-item-content">
+                      <div class="catalog__tabs-accordion-item-content">
+                        <div class="catalog__tabs-accordion-item-inner-with-img">
+                          <img class="catalog__tabs-accordion-item-img" src="/img/catalog/Rectangle.png" alt="Заглушка">
+                          <div class="catalog__tabs-accordion-item-inner-with-img-text-box">
+                            <p class="catalog__tabs-accordion-item-content-title">C'est vide ici pour l'instant</p>
+                            <p class="catalog__tabs-accordion-item-content-text">Et dans la galerie, vous pouvez toujours trouver quelque chose d'intéressant pour vous-même</p>
+                            <a href="#gallery" class="catalog__tabs-accordion-item-content-link">Vers la galerie</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog__tabs-accordion-item">
+                    <h3 class="catalog__tabs-accordion-item-title">
+                      <span class="catalog__tabs-accordion-item-title-text">C 1800 по 1899 гг.</span>
+                      <button class="catalog__tabs-accordion-item-switch">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/><path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/></svg>
+                      </button>
+                    </h3>
+                    <div class="catalog__tabs-accordion-item-content">
+                      <div class="catalog__tabs-accordion-item-content">
+                        <div class="catalog__tabs-accordion-item-inner-with-img">
+                          <img class="catalog__tabs-accordion-item-img" src="/img/catalog/Rectangle.png" alt="Заглушка">
+                          <div class="catalog__tabs-accordion-item-inner-with-img-text-box">
+                            <p class="catalog__tabs-accordion-item-content-title">C'est vide ici pour l'instant</p>
+                            <p class="catalog__tabs-accordion-item-content-text">Et dans la galerie, vous pouvez toujours trouver quelque chose d'intéressant pour vous-même</p>
+                            <a href="#gallery" class="catalog__tabs-accordion-item-content-link">Vers la galerie</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>   
+                  <div class="catalog__tabs-accordion-item">
+                    <h3 class="catalog__tabs-accordion-item-title">
+                      <span class="catalog__tabs-accordion-item-title-text">C 1900 по 1999 гг.</span>
+                      <button class="catalog__tabs-accordion-item-switch">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/><path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/></svg>
+                      </button>
+                    </h3>
+                    <div class="catalog__tabs-accordion-item-content">
+                      <div class="catalog__tabs-accordion-item-content">
+                        <div class="catalog__tabs-accordion-item-inner-with-img">
+                          <img class="catalog__tabs-accordion-item-img" src="/img/catalog/Rectangle.png" alt="Заглушка">
+                          <div class="catalog__tabs-accordion-item-inner-with-img-text-box">
+                            <p class="catalog__tabs-accordion-item-content-title">C'est vide ici pour l'instant</p>
+                            <p class="catalog__tabs-accordion-item-content-text">Et dans la galerie, vous pouvez toujours trouver quelque chose d'intéressant pour vous-même</p>
+                            <a href="#gallery" class="catalog__tabs-accordion-item-content-link">Vers la galerie</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>            
+                  <div class="catalog__tabs-accordion-item">
+                    <h3 class="catalog__tabs-accordion-item-title">
+                      <span class="catalog__tabs-accordion-item-title-text">C 2000 г.</span>
+                      <button class="catalog__tabs-accordion-item-switch">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/><path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/></svg>
+                      </button>
+                    </h3>
+                    <div class="catalog__tabs-accordion-item-content">
+                      <div class="catalog__tabs-accordion-item-content">
+                        <div class="catalog__tabs-accordion-item-inner-with-img">
+                          <img class="catalog__tabs-accordion-item-img" src="/img/catalog/Rectangle.png" alt="Заглушка">
+                          <div class="catalog__tabs-accordion-item-inner-with-img-text-box">
+                            <p class="catalog__tabs-accordion-item-content-title">C'est vide ici pour l'instant</p>
+                            <p class="catalog__tabs-accordion-item-content-text">Et dans la galerie, vous pouvez toujours trouver quelque chose d'intéressant pour vous-même</p>
+                            <a href="#gallery" class="catalog__tabs-accordion-item-content-link">Vers la galerie</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>         
+                </div>          
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>   
+    </section>
+    <section class="events">
+      <div class="container-fluid events__container">
+        <h2 class="container-title events__container-title">События</h2>
+        <div class="events__items swiper" data-mobile="false">
+          <ul class="events__items-wrapper swiper-wrapper">
+            <li class="events__item swiper-slide">
+              <picture>
+                <source srcset="/img/event/event320/min.jpg" media="(max-width:767px)">
+                <source srcset="/img/event/event768/768.jpg" media="(max-width:1020px)">
+                <source srcset="/img/event/event1024/1024.jpg" media="(max-width:1200px)">
+                <img class="events__item-img" src="/img/event/events.png" alt="Книжная гравюра в живом восприятии">
+              </picture>
+              <div class="events__item-info">
+                <div class="events__item-info-up">
+                  <p class="events__item-subtitle">Музей им. Щусева<br>с 20 марта по 30 апреля</p>
+                  <h3 class="events__item-title">Книжная гравюра в живом восприятии</h3>
+                  <p class="events__item-description">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
+                </div>
+                <a href="#" class="events__item-link">Подробнее</a>
+              </div>
+            </li>
+            <li class="events__item swiper-slide">
+              <picture>
+                <source srcset="/img/event/event320/min1.jpg" media="(max-width:767px)">
+                <source srcset="/img/event/event768/7681.jpg" media="(max-width:1020px)">
+                <source srcset="/img/event/event1024/10241.jpg" media="(max-width:1200px)">
+                <img class="events__item-img" src="/img/event/events1.png" alt="«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.">
+              </picture>
+              <div class="events__item-info">
+                <div class="events__item-info-up">
+                  <p class="events__item-subtitle">ММОМА<br>24 марта 19:00</p>
+                  <h3 class="events__item-title">&laquo;Открытая дискуссия&raquo;. Дмитрий Петров и Сергей&nbsp;Ильин.</h3>
+                  <p class="events__item-description">Высокий уровень вовлечения представителей целевой аудитории является четким<br />доказательством простого факта.</p>
+                </div>
+                <a href="#" class="events__item-link">Подробнее</a>
+              </div>
+            </li>
+            <li class="events__item swiper-slide">
+              <picture>
+                <source srcset="/img/event/event320/min2.jpg" media="(max-width:767px)">
+                <source srcset="/img/event/event768/7682.jpg" media="(max-width:1020px)">
+                <source srcset="/img/event/event1024/10242.jpg" media="(max-width:1200px)">
+                <img class="events__item-img" src="/img/event/events2.png" alt="Выставка «Формация 2020»">
+              </picture>
+              <div class="events__item-info">
+                <div class="events__item-info-up">
+                  <p class="events__item-subtitle">Еврейский музей<br>с 31 марта по 21 апреля</p>
+                  <h3 class="events__item-title">Выставка &laquo;Формация 2020&raquo;</h3>
+                  <p class="events__item-description">Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений.</p>
+                </div>
+                <a href="#" class="events__item-link">Подробнее</a>
+              </div>
+            </li>
+            <li class="events__item swiper-slide">
+              <picture>
+                <source srcset="/img/event/event320/min3.jpg" media="(max-width:767px)">
+                <source srcset="/img/event/event768/7683.jpg" media="(max-width:1020px)">
+                <source srcset="/img/event/event1024/10243.jpg" media="(max-width:1200px)">
+                <img class="events__item-img" src="/img/event/event3.jpg" alt="XXIV Международная биеннале молодого искусства">
+              </picture>
+              <div class="events__item-info">
+                <div class="events__item-info-up">
+                  <p class="events__item-subtitle">Третьяковка на Крымском валу<br>с 30 марта по 30 апреля</p>
+                  <h3 class="events__item-title">XXIV Международная биеннале молодого искусства</h3>
+                  <p class="events__item-description">Внезапно, реплицированные с зарубежных источников, современные исследования.</p>
+                </div>
+                <a href="#" class="events__item-link">Подробнее</a>
+              </div>
+            </li>
+            <li class="events__item swiper-slide">
+              <picture>
+                <source srcset="/img/event/event320/min4.jpg" media="(max-width:767px)">
+                <source srcset="/img/event/event768/7684.jpg" media="(max-width:1020px)">
+                <source srcset="/img/event/event1024/10244.jpg" media="(max-width:1200px)">
+                <img class="events__item-img" src="/img/event/event4.jpg" alt="Джон Винзор. Фотографии из серии «Метафора серебра»">
+              </picture>
+              <div class="events__item-info">
+                <div class="events__item-info-up">
+                  <p class="events__item-subtitle">ММАМ<br>с 8 апреля по 20 мая</p>
+                  <h3 class="events__item-title">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
+                  <p class="events__item-description">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
+                </div>
+                <a href="#" class="events__item-link">Подробнее</a>
+              </div>
+            </li>
+          </ul>
+          <ul class="events__items-nav"></ul>
+        </div>
+        <div class="events_see-more">
+          <button class="events_see-more-btn">Все события</button>
+        </div>
+      </div>
+    </section>
+    <section class="publications">
+      <div class="container-fluid publications__container">
+        <div class="publications__left-container">
+          <h2 class="container-title publications__container-title">Издания</h2>     
+          <div class="publications__filter-categories">
+            <h3 class="publications__filter-title">Категории</h3>
+            <button class="publications__categories-filter-mobile-btn" id="publications__categories-filter-mobile-btn">
+              <span class="publications__categories-filter-mobile-btn-title">Категории</span>
+              <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.3393 1.16934L6.16992 6.33869L1.00058 1.16934" stroke="white"/></svg>
+            </button>
+            <div class="publications__filter-categories-content">
+              <label class="publications__filter-checkbox-label" for="bestsellers">
+                <input class="publications__filter-original-checkbox" type="checkbox" name="bestsellers" id="bestsellers">
+                <span class="publications__filter-checkbox-title">Бестселлеры</span>
+                <span class="publications__filter-styled-checkbox"></span>
+              </label>
+              <label class="publications__filter-checkbox-label" for="art">
+                <input class="publications__filter-original-checkbox" type="checkbox" name="art" id="art">
+                <span class="publications__filter-checkbox-title">Искусство</span>
+                <span class="publications__filter-styled-checkbox"></span>
+              </label>
+              <label class="publications__filter-checkbox-label" for="architecture">
+                <input class="publications__filter-original-checkbox" type="checkbox" name="architecture" id="architecture">
+                <span class="publications__filter-checkbox-title">Архитектура</span>
+                <span class="publications__filter-styled-checkbox"></span>
+              </label>
+              <label class="publications__filter-checkbox-label" for="design">
+                <input class="publications__filter-original-checkbox" type="checkbox" name="design" id="design" checked>
+                <span class="publications__filter-checkbox-title">Дизайн</span>
+                <span class="publications__filter-styled-checkbox"></span>
+              </label>
+              <label class="publications__filter-checkbox-label" for="fashion">
+                <input class="publications__filter-original-checkbox" type="checkbox" name="fashion" id="fashion">
+                <span class="publications__filter-checkbox-title">Мода</span>
+                <span class="publications__filter-styled-checkbox"></span>
+              </label>
+              <label class="publications__filter-checkbox-label" for="for-children">
+                <input class="publications__filter-original-checkbox" type="checkbox" name="for-children" id="for-children">
+                <span class="publications__filter-checkbox-title">Детям</span>
+                <span class="publications__filter-styled-checkbox"></span>
+              </label>
+              <label class="publications__filter-checkbox-label" for="fiction">
+                <input class="publications__filter-original-checkbox" type="checkbox" name="fiction" id="fiction">
+                <span class="publications__filter-checkbox-title">Художественная литература</span>
+                <span class="publications__filter-styled-checkbox"></span>
+              </label>
+              <label class="publications__filter-checkbox-label" for="journalism">
+                <input class="publications__filter-original-checkbox" type="checkbox" name="journalism" id="journalism">
+                <span class="publications__filter-checkbox-title">Публицистика</span>
+                <span class="publications__filter-styled-checkbox"></span>
+              </label>
+              <label class="publications__filter-checkbox-label" for="travel-guides">
+                <input class="publications__filter-original-checkbox" type="checkbox" name="travel-guides" id="travel-guides">
+                <span class="publications__filter-checkbox-title">Путеводители</span>
+                <span class="publications__filter-styled-checkbox"></span>
+              </label>
+              <label class="publications__filter-checkbox-label" for="philosophy">
+                <input class="publications__filter-original-checkbox" type="checkbox" name="philosophy" id="philosophy">
+                <span class="publications__filter-checkbox-title">Философия</span>
+                <span class="publications__filter-styled-checkbox"></span>
+              </label>
+              <label class="publications__filter-checkbox-label" for="educational">
+                <input class="publications__filter-original-checkbox" type="checkbox" name="educational" id="educational">
+                <span class="publications__filter-checkbox-title">Учебная литература</span>
+                <span class="publications__filter-styled-checkbox"></span>
+                <span class="publications__filter-styled-checkbox"></span>
+              </label>
+              <label class="publications__filter-checkbox-label" for="magazines-newspapers">
+                <input class="publications__filter-original-checkbox" type="checkbox" name="magazines-newspapers" id="magazines-newspapers">
+                <span class="publications__filter-checkbox-title">Журналы и газеты</span>
+                <span class="publications__filter-styled-checkbox"></span>
+              </label>
+            </div>            
+          </div>
+          <div class="publications__filter-price">
+            <h3 class="publications__filter-title">Цена</h3>
+            <div class="publications__filter-price-form-group">
+              <label class="publications__filter-price-label-min" for="price-min">От</label>
+              <input class="publications__filter-price-input" id="price-min" type="text" name="price-min" placeholder="50">
+              <label class="publications__filter-price-label-max" for="price-max">до</label>
+              <input class="publications__filter-price-input" id="price-max" type="text" name="price-max" placeholder="25 000">
+              <span class="publications__filter-price-currency">руб.</span>
+            </div>
+          </div>
+        </div>
+        <div class="publications__right-container">
+          <div class="publications__btns">
+            <button class="publications__navi-prev"></button>
+            <div class="publications__navi"></div>
+            <button class="publications__navi-next"></button>
+          </div>
+          <div class="publications__items-box swiper" data-mobile="false">
+            <div class="publications__items swiper-wrapper">
+              <div class="publications__item swiper-slide">
+                <picture>
+                  <source srcset="/img/publications/publications320/1.png" media="(max-width:420px)">
+                  <source srcset="/img/publications/publications768/1.png" media="(max-width:1020px)">
+                  <source srcset="/img/publications/publications1024/1024.png" media="(max-width:1200px)">
+                  <img class="publications__item-img" src="/img/publications/publications.png" alt="Искусство цвета">
+                </picture>
+                <div class="publications__item-info">
+                  <div class="publications__item-info-text">
+                    <h3 class="publications__item-title">Искусство цвета</h3>
+                    <p class="publications__item-price">620 руб</p>
+                    <p class="publications__item-author">Иттен, Иоханнес</p>
+                  </div>
+                  <div class="publications__item-order">
+                    <button class="publications__item-link">Заказать</button>
+                  </div>
+                </div>
+              </div>
+              <div class="publications__item swiper-slide">
+                <picture>
+                  <source srcset="/img/publications/publications320/2.png" media="(max-width:420px)">
+                  <source srcset="/img/publications/publications768/2.png" media="(max-width:1020px)">
+                  <source srcset="/img/publications/publications1024/1024.1.png" media="(max-width:1200px)">
+                  <img class="publications__item-img" src="/img/publications/publications1.png" alt="Типографика">
+                </picture>
+                <div class="publications__item-info">
+                  <div class="publications__item-info-text">
+                    <h3 class="publications__item-title">Типографика</h3>
+                    <p class="publications__item-price">2 450 руб</p>
+                    <p class="publications__item-author">Рудер, Эмиль</p>
+                  </div>
+                  <div class="publications__item-order">
+                    <button class="publications__item-link">Заказать</button>
+                  </div>
+                </div>
+              </div>                                 
+              <div class="publications__item swiper-slide">
+                <picture>
+                  <source srcset="/img/publications/publications320/3.png" media="(max-width:420px)">
+                  <source srcset="/img/publications/publications768/3.png" media="(max-width:1020px)">
+                  <source srcset="/img/publications/publications1024/1024.2.png" media="(max-width:1200px)">
+                  <img class="publications__item-img" src="/img/publications/publications2.png" alt="Книга про буквы">
+                </picture>
+                <div class="publications__item-info">
+                  <div class="publications__item-info-text">        
+                    <h3 class="publications__item-title">Книга про буквы</h3>
+                    <p class="publications__item-price">2 200 руб</p>
+                    <p class="publications__item-author">Гордон, Юрий</p>
+                  </div>
+                  <div class="publications__item-order">
+                    <button class="publications__item-link">Заказать</button>
+                  </div>
+                </div>
+              </div>                     
+              <div class="publications__item swiper-slide">
+                <picture>
+                  <source srcset="/img/publications/publications320/4.png" media="(max-width:420px)">
+                  <source srcset="/img/publications/publications768/4.png" media="(max-width:1020px)">
+                  <source srcset="/img/publications/publications1024/1024.3.png" media="(max-width:1200px)">
+                  <img class="publications__item-img" src="/img/publications/publications3.png" alt="Николай Ильин">
+                </picture>
+                <div class="publications__item-info">
+                  <div class="publications__item-info-text"> 
+                    <h3 class="publications__item-title">Николай Ильин</h3>
+                    <p class="publications__item-price">1 100 руб</p>
+                    <p class="publications__item-author">Кричевский, Влад..</p>
+                  </div>
+                  <div class="publications__item-order">
+                    <button class="publications__item-link">Заказать</button>
+                  </div>
+                </div>
+              </div>
+              <div class="publications__item swiper-slide">
+                <picture>
+                  <source srcset="/img/publications/publications320/5.png" media="(max-width:420px)">
+                  <source srcset="/img/publications/publications768/5.png" media="(max-width:1020px)">
+                  <source srcset="/img/publications/publications1024/1024.4.png" media="(max-width:1200px)">
+                  <img class="publications__item-img" src="/img/publications/publications4.png" alt="Модульные сетки в граф...">
+                </picture>
+                <div class="publications__item-info">
+                  <div class="publications__item-info-text">   
+                    <h3 class="publications__item-title">Модульные сетки...</h3>
+                    <p class="publications__item-price">1 450 руб</p>
+                    <p class="publications__item-author">Мюллер-Брокманн...</p>
+                  </div>
+                  <div class="publications__item-order">
+                    <button class="publications__item-link">Заказать</button>
+                  </div>
+                </div>
+              </div>
+              <div class="publications__item swiper-slide">
+                <picture>
+                  <source srcset="/img/publications/publications320/6.png" media="(max-width:420px)">
+                  <source srcset="/img/publications/publications768/6.png" media="(max-width:1020px)">
+                  <source srcset="/img/publications/publications1024/1024.5.png" media="(max-width:1200px)">
+                  <img class="publications__item-img" src="/img/publications/publications5.png" alt="Эволюция графических ст...">
+                </picture>
+                <div class="publications__item-info">
+                  <div class="publications__item-info-text">
+                    <h3 class="publications__item-title">Эволюция графич...</h3>
+                    <p class="publications__item-price">3 200 руб</p>
+                    <p class="publications__item-author">Хеллер, Чваст</p>
+                  </div>
+                  <div class="publications__item-order">
+                    <button class="publications__item-link">Заказать</button>
+                  </div>
+                </div>
+              </div>
+              <div class="publications__item swiper-slide">
+                <picture>
+                  <source srcset="/img/publications/publications320/7.png" media="(max-width:420px)">
+                  <source srcset="/img/publications/publications768/7.png" media="(max-width:1020px)">
+                  <source srcset="/img/publications/publications1024/1024.6.png" media="(max-width:1200px)">
+                  <img class="publications__item-img" src="/img/publications/publications6.png" alt="Искусство и визуальное в... ">
+                </picture>
+                <div class="publications__item-info">
+                  <div class="publications__item-info-text">
+                    <h3 class="publications__item-title">Искусство и визуа...</h3>
+                    <p class="publications__item-price">2 200 руб</p>
+                    <p class="publications__item-author">Арнхейм, Рудольф</p>
+                  </div>
+                  <div class="publications__item-order">
+                    <button class="publications__item-link">Заказать</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="projects">
+      <div class="container-fluid projects__container">
+        <h2 class="container-title projects__container-title">Проекты</h2>
+        <p class="projects__text">
+          Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное информационно-пропагандистское
+          <button class="projects__tooltip tooltip-1">
+            <svg class="projects__tooltip-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="projects__tooltip-icon-circle" d="M15.5 8C15.5 12.1421 12.1421 15.5 8 15.5C3.85786 15.5 0.5 12.1421 0.5 8C0.5 3.85786 3.85786 0.5 8 0.5C12.1421 0.5 15.5 3.85786 15.5 8Z" fill="FFF" stroke="#9D5CD0"/>
+              <path class="projects__tooltip-icon-i" d="M7.26154 6.4551H8.73846V13H7.26154V6.4551ZM8 4.90259C7.71282 4.90259 7.4718 4.81126 7.27692 4.62861C7.09231 4.44597 7 4.22273 7 3.9589C7 3.69508 7.09231 3.47184 7.27692 3.28919C7.4718 3.0964 7.71282 3 8 3C8.28718 3 8.52308 3.09132 8.70769 3.27397C8.90256 3.44647 9 3.66464 9 3.92846C9 4.20243 8.90256 4.43582 8.70769 4.62861C8.52308 4.81126 8.28718 4.90259 8 4.90259Z" fill="black"/>
+            </svg>
+          </button>
+          обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены 
+          <button class="projects__tooltip tooltip-2">
+            <svg class="projects__tooltip-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="projects__tooltip-icon-circle" d="M15.5 8C15.5 12.1421 12.1421 15.5 8 15.5C3.85786 15.5 0.5 12.1421 0.5 8C0.5 3.85786 3.85786 0.5 8 0.5C12.1421 0.5 15.5 3.85786 15.5 8Z" fill="FFF" stroke="#9D5CD0"/>
+              <path class="projects__tooltip-icon-i" d="M7.26154 6.4551H8.73846V13H7.26154V6.4551ZM8 4.90259C7.71282 4.90259 7.4718 4.81126 7.27692 4.62861C7.09231 4.44597 7 4.22273 7 3.9589C7 3.69508 7.09231 3.47184 7.27692 3.28919C7.4718 3.0964 7.71282 3 8 3C8.28718 3 8.52308 3.09132 8.70769 3.27397C8.90256 3.44647 9 3.66464 9 3.92846C9 4.20243 8.90256 4.43582 8.70769 4.62861C8.52308 4.81126 8.28718 4.90259 8 4.90259Z" fill="black"/>
+            </svg>
+          </button>
+          исключительно в разрезе маркетинговых и финансовых
+          <button class="projects__tooltip tooltip-3">
+            <svg class="projects__tooltip-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="projects__tooltip-icon-circle" d="M15.5 8C15.5 12.1421 12.1421 15.5 8 15.5C3.85786 15.5 0.5 12.1421 0.5 8C0.5 3.85786 3.85786 0.5 8 0.5C12.1421 0.5 15.5 3.85786 15.5 8Z" fill="FFF" stroke="#9D5CD0"/>
+              <path class="projects__tooltip-icon-i" d="M7.26154 6.4551H8.73846V13H7.26154V6.4551ZM8 4.90259C7.71282 4.90259 7.4718 4.81126 7.27692 4.62861C7.09231 4.44597 7 4.22273 7 3.9589C7 3.69508 7.09231 3.47184 7.27692 3.28919C7.4718 3.0964 7.71282 3 8 3C8.28718 3 8.52308 3.09132 8.70769 3.27397C8.90256 3.44647 9 3.66464 9 3.92846C9 4.20243 8.90256 4.43582 8.70769 4.62861C8.52308 4.81126 8.28718 4.90259 8 4.90259Z" fill="black"/>
+            </svg>
+          </button>       
+          предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее: <a class="text-link" href="#">blanchard&#8209;art.ru/projects/about</a>
+        </p>
+        <h3 class="projects__partners-title">Партнёры проектов:</h3>
+        <div class="projects__partners-slider">        
+          <button class="projects__partners-items-navi-prev">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="projects__partners-items-navi-prev-circle" d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z" fill="#ECECEC"/>
+              <path class="projects__partners-items-navi-prev-arrow" d="M16 20L11 15L16 10" stroke="black"/>
+            </svg>
+          </button>
+          <button class="projects__partners-items-navi-next">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="projects__partners-items-navi-next-circle" d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z" fill="#ECECEC"/>
+              <path class="projects__partners-items-navi-next-arrow" d="M14 20L19 15L14 10" stroke="black"/>
+            </svg>
+          </button>
+          <div class="projects__partners swiper">
+            <div class="projects__partners-items swiper-wrapper">
+              <div class="projects__partners-item swiper-slide">
+                <a class="projects__partners-item-link" href="#">
+                  <img class="projects__partners-item-img" src="/img/projects/1.png" alt="партнер 1">
+                </a>
+              </div>
+              <div class="projects__partners-item swiper-slide">
+                <a class="projects__partners-item-link" href="#">
+                  <img class="projects__partners-item-img" src="/img/projects/2.png" alt="партнер 2">
+                </a>
+              </div>
+              <div class="projects__partners-item swiper-slide">
+                <a class="projects__partners-item-link" href="#">
+                  <img class="projects__partners-item-img" src="/img/projects/3.png" alt="партнер 3">
+                </a>
+              </div>
+              <div class="projects__partners-item swiper-slide">
+                <a class="projects__partners-item-link" href="#">
+                  <img class="projects__partners-item-img" src="/img/projects/4.png" alt="партнер 4">
+                </a>
+              </div>
+              <div class="projects__partners-item swiper-slide">
+                <a class="projects__partners-item-link" href="#">
+                  <img class="projects__partners-item-img" src="/img/projects/5.png" alt="партнер 5">
+                </a>
+              </div>
+              <div class="projects__partners-item swiper-slide">
+                <a class="projects__partners-item-link" href="#">
+                  <img class="projects__partners-item-img" src="/img/projects/6.png" alt="партнер 6">
+                </a>
+              </div>
+              <div class="projects__partners-item swiper-slide">
+                <a class="projects__partners-item-link" href="#">
+                  <img class="projects__partners-item-img" src="/img/projects/7.png" alt="партнер 7">
+                </a>
+              </div>
+              <div class="projects__partners-item swiper-slide">
+                <a class="projects__partners-item-link" href="#">
+                  <img class="projects__partners-item-img" src="/img/projects/8.png" alt="партнер 8">
+                </a>
+              </div>
+              <div class="projects__partners-item swiper-slide">
+                <a class="projects__partners-item-link" href="#">
+                  <img class="projects__partners-item-img" src="/img/projects/9.png" alt="партнер 9">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contacts">
+      <div class="container-fluid">
+        <h2 class="container-title contacts__container-title">Контакты</h2>
+      </div>
+      <div class="contacts__main-content">
+        <div class="contacts__main-left">
+          <div class="contacts__address">
+            <p class="contacts__show-room-title">Шоурум №4</p>
+            <p class="contacts__show-room-address">Леонтьевский переулок, дом 5/1</p>
+          </div>          
+          <p class="contacts__form-title">Заказать обратный звонок</p>
+          <form class="contacts__form" action="https://jsonplaceholder.typicode.com/posts" method="POST" enctype="multipart/form-data" autocomplete="on">
+            <div class="contacts__form-group">
+              <input class="contacts__form-field" type="text" name="name" placeholder="Имя*" data-validate-field="name">
+              <p class="contacts__form-success-message">Благодарим за сообщение!<br>Наши специалисты свяжутся с вами в ближайшее время.</p>
+            </div>
+            <div class="contacts__form-group">
+              <input class="contacts__form-field" type="tel" name="phone" placeholder="Телефон*" data-validate-field="phone">
+            </div>
+            <button class="contact__submit-btn" type="submit">Заказать</button>
+          </form>
+          <p class="contacts__messengers-title">Связаться в один клик</p>
+          <div class="contacts__messengers">
+            <a class="contacts__messengers-link" href="#" target="_blank" aria-label="Blanchard в WhatsApp">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 39.375C30.7005 39.375 39.375 30.7005 39.375 20C39.375 9.29948 30.7005 0.625 20 0.625C9.29948 0.625 0.625 9.29948 0.625 20C0.625 30.7005 9.29948 39.375 20 39.375Z" fill="#30BF39"/>
+                <path d="M25.8749 21.751C25.6249 21.626 24.3124 20.876 24.0624 20.8135C23.8124 20.6885 23.6249 20.6885 23.4374 20.9385C23.2499 21.1885 22.6874 21.8135 22.5624 21.9385C22.3749 22.126 22.2499 22.126 21.9999 22.001C21.7499 21.876 20.8749 21.5635 19.8749 20.5635C19.1249 19.8135 18.5624 18.9385 18.4374 18.626C18.3124 18.376 18.4374 18.1885 18.5624 18.0635C18.6874 17.9385 18.8124 17.751 18.9999 17.626C19.1874 17.501 19.1874 17.376 19.3124 17.1885C19.4374 17.001 19.3749 16.876 19.3124 16.6885C19.2499 16.501 18.7499 15.1885 18.5624 14.626C18.3749 14.0635 18.1249 14.1885 17.9999 14.126C17.8124 14.126 17.6874 14.0635 17.4999 14.0635C17.2499 14.0635 16.9374 14.1885 16.7499 14.376C16.4999 14.626 15.7499 15.251 15.7499 16.5635C15.7499 17.876 16.6249 19.251 16.7499 19.376C16.8749 19.5635 18.4999 22.4385 21.1874 23.626C23.8749 24.8135 23.8749 24.4385 24.3749 24.4385C24.8749 24.4385 25.9999 23.8135 26.2499 23.251C26.4999 22.626 26.4999 22.0635 26.4374 22.001C26.3124 22.001 26.1249 21.9385 25.8749 21.751ZM20.8749 28.1885C19.1249 28.1885 17.4999 27.6885 16.0624 26.751L12.6874 27.8135L13.8124 24.5635C12.7499 23.0635 12.1249 21.251 12.1249 19.376C12.1249 14.501 16.0624 10.5635 20.9374 10.5635C25.8124 10.5635 29.6874 14.501 29.6874 19.376C29.6874 24.251 25.7499 28.1885 20.8749 28.1885ZM20.8749 8.81348C15.0624 8.81348 10.3124 13.5635 10.3124 19.376C10.3124 21.3135 10.8124 23.1885 11.8124 24.8135L9.87489 30.501L15.7499 28.626C17.3124 29.501 19.0624 29.9385 20.8749 29.9385C26.6874 29.9385 31.4374 25.1885 31.4374 19.376C31.4374 13.5635 26.7499 8.81348 20.8749 8.81348Z" fill="white"/>
+              </svg>
+            </a>
+            <a class="contacts__messengers-link" href="#" target="_blank" aria-label="Blanchard в Telegram - ссылка">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 40C31.0457 40 40 31.0457 40 20C40 8.95431 31.0457 0 20 0C8.95431 0 0 8.95431 0 20C0 31.0457 8.95431 40 20 40Z" fill="url(#paint0_linear_57972_1461)"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.05312 19.7889L20.7167 14.7649C26.271 12.4547 27.425 12.0534 28.1773 12.0402C28.3428 12.0373 28.7127 12.0783 28.9523 12.2727C29.1547 12.4369 29.2103 12.6587 29.237 12.8143C29.2636 12.9699 29.2968 13.3246 29.2704 13.6017C28.9694 16.7641 27.667 24.4386 27.0045 27.9806C26.7241 29.4794 26.1725 29.9819 25.6377 30.0311C24.4762 30.138 23.5943 29.2635 22.4694 28.5261L18.006 25.528C16.0314 24.2268 17.3114 23.5116 18.4368 22.3428C18.7313 22.0368 23.8486 17.3823 23.9476 16.96C23.9596 16.9072 23.9715 16.7104 23.8546 16.6064C23.7376 16.5024 23.565 16.5384 23.4404 16.5663C23.2639 16.6064 20.4519 18.465 15.0044 22.1423C14.2062 22.6904 13.4832 22.9575 12.8354 22.9435C12.1213 22.9281 10.7477 22.5397 9.72652 22.2078C8.474 21.8007 7.47852 21.5854 7.56524 20.8939C7.61036 20.5338 8.10632 20.1655 9.05308 19.789L9.05312 19.7889Z" fill="white"/>
+                <defs>
+                  <linearGradient id="paint0_linear_57972_1461" x1="20" y1="0" x2="20" y2="39.7033" gradientUnits="userSpaceOnUse">
+                    <stop offset="1" stop-color="#2AABEE"/>
+                    <stop offset="1" stop-color="#229ED9"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="contacts__main-right">
+          <div class="contacts__mobile-address">
+            <p class="contacts__show-room-title">Шоурум №4</p>
+            <p class="contacts__show-room-address">Леонтьевский переулок, дом 5/1</p>
+          </div>
+          <div id="contacts__map"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container-fluid footer__container">
+      <div class="footer__left">
+        <a class="footer__logo" href="/">
+          <img class="footer__logo-img" src="/img/header/Лого(2).png" alt="Логотип Blanchard">
+        </a> 
+      </div>
+      <div class="footer__right">
+        <ul class="footer__socials">
+          <li class="footer__social-item footer__social-vk">
+            <a class="footer__social-link" href="#" target="_blank" aria-label="Blanchard в VK">
+              <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.5 0C10.074 0 0 10.0736 0 22.5C0 34.9264 10.074 45 22.5 45C34.926 45 45 34.9264 45 22.5C45 10.0736 34.926 0 22.5 0ZM33.9132 24.9335C34.9619 25.9577 36.0714 26.9217 37.0128 28.0519C37.4299 28.5519 37.823 29.0688 38.1222 29.6503C38.5495 30.4794 38.1637 31.3886 37.4216 31.4379L32.812 31.4369C31.6215 31.5354 30.6741 31.0553 29.8754 30.2414C29.2378 29.5927 28.6462 28.8999 28.0321 28.2292C27.7812 27.9539 27.517 27.6947 27.2021 27.4907C26.5737 27.0819 26.0277 27.2072 25.6677 27.8636C25.3008 28.5316 25.217 29.2719 25.182 30.0153C25.1319 31.1022 24.8041 31.3863 23.7135 31.4374C21.3832 31.5465 19.1721 31.1929 17.117 30.0181C15.3041 28.9818 13.901 27.5193 12.6783 25.8634C10.2973 22.6353 8.47381 19.0924 6.8354 15.4478C6.46665 14.627 6.73642 14.1878 7.64194 14.1707C9.14639 14.1417 10.6508 14.1454 12.1553 14.1694C12.7676 14.179 13.1727 14.5294 13.4079 15.1071C14.2209 17.1074 15.2176 19.0105 16.4665 20.7755C16.7994 21.2455 17.1391 21.7142 17.623 22.0461C18.157 22.4125 18.5639 22.2915 18.8158 21.6953C18.9769 21.3164 19.0464 20.9113 19.0814 20.5053C19.2011 19.1145 19.2153 17.7242 19.0082 16.339C18.8793 15.4722 18.3918 14.9124 17.5277 14.7485C17.0876 14.6652 17.152 14.5022 17.3661 14.2508C17.7376 13.8163 18.0856 13.5474 18.7812 13.5474L23.9893 13.5465C24.8101 13.7076 24.9942 14.0759 25.1056 14.9027L25.1102 20.6903C25.1006 21.0103 25.2709 21.9586 25.8454 22.1681C26.3058 22.32 26.6096 21.9508 26.8849 21.6594C28.1339 20.334 29.0237 18.7697 29.8206 17.1506C30.1723 16.4366 30.4757 15.6978 30.7703 14.9575C30.9895 14.4101 31.3301 14.1408 31.9479 14.15L36.9631 14.156C37.1108 14.156 37.2609 14.1574 37.4073 14.1827C38.2525 14.3273 38.4841 14.6909 38.2226 15.5154C37.811 16.8109 37.0114 17.89 36.2297 18.9718C35.3919 20.1301 34.4983 21.2478 33.6687 22.4111C32.9064 23.4746 32.9667 24.01 33.9132 24.9335Z" fill="#CACACA"/></svg>
+            </a>
+          </li>
+          <li class="footer__social-item footer__social-inst">
+            <a class="footer__social-link" href="#" target="_blank" aria-label="Blanchard в Instagram">
+              <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.1172 22.5C18.1172 24.8785 20.0453 26.8066 22.4238 26.8066C24.8024 26.8066 26.7305 24.8785 26.7305 22.5C26.7305 20.1215 24.8024 18.1934 22.4238 18.1934C20.0453 18.1934 18.1172 20.1215 18.1172 22.5Z" fill="#CACACA"/><path d="M12.3521 14.8803C12.5591 14.3194 12.8894 13.8116 13.3185 13.3948C13.7353 12.9656 14.2428 12.6354 14.8041 12.4283C15.2593 12.2515 15.9432 12.0411 17.2029 11.9837C18.5655 11.9216 18.9741 11.9082 22.4238 11.9082C25.8738 11.9082 26.2824 11.9212 27.6447 11.9834C28.9044 12.0411 29.5886 12.2515 30.0435 12.4283C30.6048 12.6354 31.1126 12.9656 31.5291 13.3948C31.9582 13.8116 32.2885 14.319 32.4959 14.8803C32.6727 15.3356 32.8831 16.0198 32.9405 17.2795C33.0026 18.6418 33.016 19.0503 33.016 22.5004C33.016 25.9501 33.0026 26.3587 32.9405 27.7213C32.8831 28.981 32.6727 29.6649 32.4959 30.1201C32.2885 30.6814 31.9586 31.1889 31.5294 31.6057C31.1126 32.0348 30.6052 32.3651 30.0438 32.5721C29.5886 32.7493 28.9044 32.9597 27.6447 33.0171C26.2824 33.0792 25.8742 33.0922 22.4241 33.0922C18.9737 33.0922 18.5652 33.0792 17.2032 33.0171C15.9436 32.9597 15.2593 32.7493 14.8041 32.5721C13.6773 32.1375 12.7867 31.2469 12.3521 30.1201C12.1753 29.6649 11.9648 28.981 11.9071 27.7213C11.845 26.3587 11.8319 25.9501 11.8319 22.5004C11.8319 19.0503 11.845 18.6418 11.9071 17.2795C11.9645 16.0198 12.1749 15.3356 12.3521 14.8803ZM22.4238 29.1344C26.0881 29.1344 29.0585 26.1643 29.0585 22.5001C29.0585 18.8358 26.0881 15.8657 22.4238 15.8657C18.7599 15.8657 15.7894 18.8358 15.7894 22.5001C15.7894 26.1643 18.7599 29.1344 22.4238 29.1344ZM15.5271 17.1538C16.3834 17.1538 17.0776 16.4596 17.0776 15.6034C17.0776 14.7471 16.3834 14.0529 15.5271 14.0529C14.6709 14.0529 13.9767 14.7471 13.9767 15.6034C13.977 16.4596 14.6709 17.1538 15.5271 17.1538Z" fill="#CACACA"/><path d="M22.6204 0C34.9364 0 44.9238 9.98747 44.9238 22.3034C44.9238 34.6194 34.9364 44.6069 22.6204 44.6069C10.3044 44.6069 0.316959 34.6194 0.316959 22.3034C0.316959 9.98747 10.3044 0 22.6204 0ZM9.89059 27.5836C9.95253 28.9469 10.1693 29.8777 10.4858 30.6924C11.1512 32.4127 12.5111 33.7727 14.2314 34.438C15.0458 34.7545 15.9769 34.971 17.3399 35.0332C18.7057 35.0955 19.1419 35.1105 22.6201 35.1105C26.01020 35.1105 26.5345 35.0955 27.9005 35.0332C29.2635 34.971 30.1946 34.7545 31.009 34.438C31.8639 34.1164 32.6378 33.6124 33.2776 32.9607C33.929 32.3212 34.433 31.547 34.7546 30.6924C35.0711 29.878 35.2879 28.9469 35.3498 27.5839C35.4128 26.2178 35.4274 25.7815 35.4274 22.3034C35.4274 18.8253 35.4128 18.389 35.3502 17.0233C35.2883 15.66 35.0718 14.7292 34.7553 13.9145C34.4337 13.0599 33.9293 12.2857 33.2776 11.6462C32.6382 10.9945 31.8639 10.4905 31.0094 10.1689C30.1946 9.85236 29.2638 9.63592 27.9005 9.57364C26.5348 9.51136 26.01020 9.49638 22.6204 9.49638C19.1423 9.49638 18.706 9.51136 17.3403 9.57398C15.9769 9.63592 15.0462 9.85236 14.2314 10.1685C13.3769 10.4901 12.6026 10.9945 11.9628 11.6462C11.3114 12.286 10.8071 13.0599 10.4858 13.9145C10.169 14.7292 9.95253 15.66 9.89025 17.0233C9.82798 18.389 9.81334 18.8253 9.81334 22.3034C9.81334 25.7815 9.82798 26.2178 9.89059 27.5836Z" fill="#CACACA"/></svg>
+            </a>
+          </li>
+          <li class="footer__social-item footer__social-fb">
+            <a class="footer__social-link" href="#" target="_blank" aria-label="Blanchard в Facebook">
+              <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.5 0C10.125 0 0 10.1431 0 22.6355C0 33.9307 8.23499 43.3057 18.99 45V29.1867H13.275V22.6355H18.99V17.6431C18.99 11.9729 22.3425 8.85542 27.495 8.85542C29.9475 8.85542 32.5125 9.28464 32.5125 9.28464V14.8645H29.6775C26.8875 14.8645 26.01 16.6039 26.01 18.3886V22.6355H32.265L31.2525 29.1867H26.01V45C31.312 44.1593 36.1399 41.4432 39.6223 37.342C43.1047 33.2408 45.012 28.0248 44.9999 22.6355C44.9999 10.1431 34.875 0 22.5 0Z" fill="#CACACA"/></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <div class="gallery__modal">
+    <div class="gallery__modal-container">
+      <div class="gallery__modal-container-left">
+        <img class="gallery__modal-img" src="/img/gallery/1.png" alt="Женщина с граблями - Казимир Малевич">
+      </div>
+      <div class="gallery__modal-container-right">
+        <button class="gallery__modal-close">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666885 15.3045L15.3336 0.000275917L16.0002 0.695923L1.33355 16.0002L0.666885 15.3045Z" fill="#000000"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z" fill="#000000"/>
+          </svg>
+        </button>
+        <h2 class="gallery__modal-author">Казимир Малевич</h2>
+        <h3 class="gallery__modal-picture">“Женщина с граблями”</h3>
+        <p class="gallery__modal-years">1931-1932</p>
+        <p class="gallery__modal-description">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+  <script src="/js/choices.min.js"></script>
+  <script src="https://unpkg.com/popper.js@1"></script>
+  <script src="https://unpkg.com/tippy.js@5/dist/tippy-bundle.iife.js"></script>
+  <script src="/js/just-validate.min.js"></script>
+  <script src="/js/jquery-ui-min.js"></script>
+  <script src="/js/inputmask.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&amp;lang=ru_RU" type="text/javascript"></script>
+  <script src="/js/scripts.js"></script>
+</body>
+</html>
